@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import Road from './components/Road/Road';
+import Doodle from './components/Doodle/Doodle';
 
 function App() {
   return (
-    <div className="App">
+    <Road />
+  );
+}
+
+/* 
+<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -16,11 +22,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+
         </a>
       </header>
     </div>
-  );
-}
+
+*/
 
 export default App;
