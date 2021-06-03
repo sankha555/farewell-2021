@@ -6,13 +6,13 @@ import Col from 'react-bootstrap/Col';
 import img from './Untitled.jpg';
 
 
-  const Images = ({css}) => {
+  const Images = ({css,path}) => {
     return (
         <div>
             <Container>
               <Row>
                 <Col>
-                  <Image src={img} rounded />
+                  <Image src={img} roundedCircle style={css} />
                 </Col>
               </Row>
             </Container>
