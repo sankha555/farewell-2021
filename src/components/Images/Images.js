@@ -3,7 +3,7 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import img from './Untitled.jpg';
+import img from './Untitled.png';
 
 
   const Images = ({css,path}) => {
@@ -12,7 +12,7 @@ import img from './Untitled.jpg';
             <Container>
               <Row>
                 <Col>
-                  <Image src={img} roundedCircle style={css} />
+                  <Image src={img} fluid  style={css} />
                 </Col>
               </Row>
             </Container>
