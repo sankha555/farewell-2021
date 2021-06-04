@@ -7,4 +7,6 @@
     border-right:20px solid rgb(255, 230, 0); 
     display: inline-block;
     position: fixed;
+    margin-top: 1rem;
+    top: 80vh;
 }

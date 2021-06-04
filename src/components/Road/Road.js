@@ -15,35 +15,27 @@ function Road() {
   };
 
   const scrollRef = useRef(null);
-
-  const num = 50;
-  let points_th = [];
-
-  for (let i = 0; i < num; i++) {
-    points_th.push(<th>Points</th>);
-    }
     
     let dots = '.';
-    let dot = ".";
-    for (let i= 0; i < 500; i++) {
-        dots = dots.concat(dot);
+    for (let i= 0; i < 200; i++) {
+        dots = dots.concat('*.*.*.');
     }
+
   return (
-    <div>
+      <React.Fragment>
       <div
         ref={scrollRef}
-        className="container"
-        id="container"
+        className="road"
         onWheel={onWheel}
       >
-        <table>
             <Doodle />
-                  <p>{
-                    dots 
-                  }</p>
-        </table>
-      </div>
-    </div>
+              <p style={{ color: "blue" }}>
+                {dots}
+            </p>
+        
+          </div>
+          </React.Fragment>
+    
   );
 }
 
