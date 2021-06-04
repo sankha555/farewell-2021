@@ -29,7 +29,7 @@ function Road() {
         onWheel={onWheel}
       >
             <Doodle />
-              <p style={{ color: "blue" }}>
+              <p style={{ color: "white" }}>
                 {dots}
             </p>
         
