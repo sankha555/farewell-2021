@@ -3,36 +3,34 @@ import {useEffect, useState} from 'react';
 import {Dimensions} from 'react-native';
 import './Rotate.css';
 
+const window = Dimensions.get("window");    
 
  const Rotate = () => {
-     const [orientation, setOrientation] = useState("LANDSCAPE");
+  
+  const [dimensions, setDimensions] = useState({window});
+   const onChange = ({window}) => {
+    setDimensions({window});
+  };    
 
      useEffect(() => {
-        Dimensions.addEventListener('change', ({window:{width,height}})=>{
-          if (width<height) {
-            setOrientation("PORTRAIT")
-          } else {
-            setOrientation("LANDSCAPE")
-        
-          }
-        })
-    
-      }, []);
-  if(orientation === "PORTRAIT")
-      {
-      return (
-          <div className="phone-container">
-        <div className="phone center">
-        </div>
-        <div className="message center">
-          Please rotate your device!
+    Dimensions.addEventListener("change", onChange);
+    return () => {
+      Dimensions.removeEventListener("change", onChange);
+    };
+  });
+          if (dimensions.window.width<dimensions.window.height) {
+             return (
+        <div className="phone-container">
+        <div className="phone">
+          </div>
+          <div className="message">
+            Please rotate your device!
         </div>
         </div>
         );
       }
-    else
-      return null;
-    }
-
-
+           else {
+            return null;
+           }
+          }
 export default Rotate;
