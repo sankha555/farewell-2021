@@ -1,27 +1,18 @@
 import './App.css';
 import Images from './components/Images/Images';
+import Rotate from './components/Rotate/Rotate';
 import Road from './components/Road/Road';
 import image_css from './components/Images/Images.css';
-//const path = './components/Images/Untitled.jpg';
+import img_path from './components/Images/Untitled.jpg';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import CustomModal from './components/Modal/Modal';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        {/* <Rotate/> */}
+        {/* <CustomModal/> */}
+      </div>
   );
 }
 
