@@ -3,8 +3,9 @@ body {
   /* background: black; */
   height: 100%;
   width: 100%;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
-
 body {
   display: flex;
   justify-content: center;
@@ -16,21 +17,27 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  height: 50vh;
+  width: 50vw;
 }
 
 .phone {
   height: 50px;
   width: 100px;
-  border: 3px solid black;
+  border: 3px solid #b0b0b0;
   border-radius: 10px;
   animation: rotate 1.5s ease-in-out infinite alternate;
   /* display: none; */
 }
 
 .message {
-  color: black;
+  color: #b0b0b0;
   font-size: 1em;
   margin-top: 40px;
+  font-weight: bolder;
   /* display: none; */
 }
 
