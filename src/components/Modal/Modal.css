@@ -1,0 +1,18 @@
+#text {
+  border: 2px red solid;
+  width: 40%;
+  padding: 10px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 6%;
+  height: 300px;
+  font-size: 20px;
+}
+
+#img {
+  border: 2px green solid;
+  width: 40%;
+  display: flex;
+  padding: 10px;
+  height: 300px;
+}

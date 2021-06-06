@@ -1,9 +1,9 @@
-import React from 'react'
-import { useState } from 'react'
-import { Button } from 'react-bootstrap'
-import './content.css'
+import React from 'react';
+import { useState } from 'react';
+import { Button,Modal } from 'react-bootstrap';
+import './Modal.css'
 
-function Modal() {
+function CustomModal() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -46,4 +46,4 @@ function Modal() {
 }
 
 
-export default Modal
+export default CustomModal;
