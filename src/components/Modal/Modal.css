@@ -1,0 +1,64 @@
+#title
+{
+  font-size: 1.5em;
+  font-weight: 900;
+  
+}
+
+#text {
+
+  width: 30%;
+  padding-top: 10vh;
+  float: left;
+  text-align: center;
+  margin-left: 6%;
+  height: 60vh;
+  font-size: 1em;
+  color:white;
+ 
+  font-weight: 900;
+  line-height:2;
+
+}
+
+#image {
+  width: 60%;
+  display: flex;
+ 
+  height: 60vh;
+  
+}
+
+#add{
+    width: 100vw;
+  opacity: 0.4;
+}
+
+#back
+{
+  background-color: #5cdb95;
+  background-image: url("bg.jpg");
+  background-size: 100vh;
+}
+
+#header
+{
+  background-color: #161616;
+  color: #a5232f;
+  
+
+}
+
+#footer
+{
+  background-color:#161616;
+}
+
+#button
+{
+  background-color:#a5232f;
+  border-color: #a5232f;
+  border-radius:10%;
+  color:white;
+  font-weight: 900;
+}
