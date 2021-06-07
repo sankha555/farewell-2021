@@ -1,25 +1,24 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import { Dimensions } from "react-native";
 import "./Rotate.css";
 import Particles from "react-particles-js";
 import ParticleConfig from "./Particle-config";
+import { Dimensions } from "react-native";
+import {setState,useEffect,useState} from "react";
 
-const window = Dimensions.get("window");
 
 const Rotate = () => {
+const window = Dimensions.get("window"); 
+
   const [dimensions, setDimensions] = useState({ window });
   const onChange = ({ window }) => {
     setDimensions({ window });
   };
-
-  useEffect(() => {
+ useEffect(() => {
     Dimensions.addEventListener("change", onChange);
     return () => {
       Dimensions.removeEventListener("change", onChange);
     };
   });
-
   if (dimensions.window.width < dimensions.window.height) {
     return (
       <div>

@@ -1,17 +1,12 @@
-import './App.css';
-import Images from './components/Images/Images';
-import Rotate from './components/Rotate/Rotate';
-import Road from './components/Road/Road';
-import image_css from './components/Images/Images.css';
-import img_path from './components/Images/Untitled.jpg';
+import React from 'react-transition-group'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import CustomModal from './components/Modal/Modal';
+import Layout from './containers/Layout';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-        {/* <Rotate/> */}
-        <CustomModal/>
+      <Layout/>
       </div>
   );
 }
