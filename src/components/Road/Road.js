@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Road.css';
 import Doodle from '../Doodle/Doodle';
 import Milestone from '../Milestone/Milestone';
-
+import CustomModal from '../Modal/Modal';
 
 function Road() {
     
@@ -59,6 +59,7 @@ function Road() {
     }
 
     const milestones = ['First Year', 'Second Year', 'Third Year', 'Fourth Year'];
+
 
   return (
       <React.Fragment>

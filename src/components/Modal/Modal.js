@@ -4,7 +4,7 @@ import { Button, Modal } from 'react-bootstrap';
 import './Modal.css'
 
 
-function CustomModal() {
+function CustomModal(props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -12,7 +12,7 @@ function CustomModal() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>Load Content</Button>
+      <Button variant="primary" onClick={handleShow}>{props.text}</Button>
       <Modal show={show} onHide={handleClose}>
         
         <Modal.Header id="header" closeButton>
