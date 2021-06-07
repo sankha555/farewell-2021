@@ -10,7 +10,7 @@ import CustomModal from './components/Modal/Modal';
 function App() {
   return (
     <div className="App">
-        {/* <Rotate/> */}
+        <Rotate/>
         {/* <CustomModal/> */}
       </div>
   );
