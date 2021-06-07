@@ -1,3 +1,14 @@
-.body{
-    
+
+.road{
+    margin-top: 40vh;
+    height: 60vh;
+    width: 100%;
+    overflow-x: scroll;
+    background-color: black;
+    position: relative;
+}
+
+.road p{
+    white-space: nowrap;
+    display: inline;
 }
