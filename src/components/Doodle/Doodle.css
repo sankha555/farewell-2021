@@ -3,10 +3,10 @@
     width: 100px; 
     height: 100px; 
     border-top: 20px solid transparent; 
-    border-left:20px solid rgb(255, 230, 0); 
+    border-left:20px solid rgb(255, 81, 0); 
     display: inline-block;
-    position: fixed;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    top: 80vh;
+    bottom: 15px;
+    left: 15px;
+    position: absolute;
+    z-index: 1;
 }

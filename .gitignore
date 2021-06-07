@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+/src/App.bak
+
 # testing
 /coverage
 
