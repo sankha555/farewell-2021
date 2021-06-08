@@ -3,7 +3,9 @@ import '../Spinner/Spinner.css'
 
 
 function Spinner(props) {
-    return ( <div id="spinnerdiv">
+    return (
+    <div className="spinnerBack">    
+    <div id="spinnerdiv">
     <div id="wrapD3Cube">
         <div id="D3Cube"><div id="side1"><div id="main1"></div><div id="sidediv1"></div>
             </div>
@@ -16,7 +18,9 @@ function Spinner(props) {
      </div>
     <p id= "spinner_txt">CODING CLUB</p>
     <div id="loader"></div>
-    </div> );
+            </div>
+            </div>
+     );
 }
 
 

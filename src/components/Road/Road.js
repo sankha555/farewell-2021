@@ -62,7 +62,8 @@ function Road() {
 
 
   return (
-      <React.Fragment>
+
+          <div className="roadContainer">
       <div
         ref={scrollRef}
         className="road"
@@ -73,8 +74,9 @@ function Road() {
                 {dots}
               </p>
               {milestones.map( (milestone, index) => <Milestone left={1250*(index+1)} milestone={milestone} />)}
-          </div>
-          </React.Fragment>
+              </div>
+              </div>
+       
     
   );
 }
