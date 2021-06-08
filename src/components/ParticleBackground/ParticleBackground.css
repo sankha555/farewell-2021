@@ -1,14 +1,10 @@
-html,
-body {
-  /* background: black; */
-  height: 100%;
-  width: 100%;
-  /* overflow-x: hidden;
-  overflow-y: hidden; */
-}
-body {
+
+.bg {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#tsparticles {
 }

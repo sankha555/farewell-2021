@@ -1,14 +1,11 @@
 import React from "react";
 import "./Rotate.css";
 import Particles from "react-particles-js";
-import ParticleConfig from "./Particle-config";
 import Road from "../../components/Road/Road";
 import { Dimensions } from "react-native";
 import { setState, useEffect, useState } from "react";
 import ParticleBackground from "../ParticleBackground/ParticleBackground";
-
-const window = Dimensions.get("window");
-
+import ParticleConfig from "./Particle-config";
 const Rotate = () => {
   const window = Dimensions.get("window");
 
@@ -25,7 +22,7 @@ const Rotate = () => {
   if (dimensions.window.width < dimensions.window.height) {
     return (
       <div>
-        <ParticleBackground />
+        <ParticleBackground config={ParticleConfig} />
         <div className="phone-container">
           <div className="phone"></div>
           <div className="message">Please rotate your device!</div>

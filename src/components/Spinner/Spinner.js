@@ -1,11 +1,13 @@
 import React from 'react'
 import '../Spinner/Spinner.css'
-
+import '../ParticleBackground/ParticleBackground';
+import ParticleBackground from '../ParticleBackground/ParticleBackground';
+import ParticleConfig from './Particle-config';
 
 function Spinner(props) {
-    return (
-    <div className="spinnerBack">    
-    <div id="spinnerdiv">
+    return ( <div>
+    <ParticleBackground config={ParticleConfig}/>
+    <div id="spinnerdiv">     
     <div id="wrapD3Cube">
         <div id="D3Cube"><div id="side1"><div id="main1"></div><div id="sidediv1"></div>
             </div>
@@ -18,10 +20,8 @@ function Spinner(props) {
      </div>
     <p id= "spinner_txt">CODING CLUB</p>
     <div id="loader"></div>
-            </div>
-            </div>
-     );
+    </div> </div>);
 }
 
 
-export default Spinner
+export default Spinner;

@@ -7,7 +7,7 @@ import {setState,useEffect,useState} from "react";
 
 
 
-    function ParticleBackground()
+    function ParticleBackground(props)
     {
 const window = Dimensions.get("window"); 
 
@@ -23,11 +23,11 @@ const window = Dimensions.get("window");
   });
     return(
         
-        <div class="bg">
+        <div className="bg">
 <Particles
-            width={dimensions.window.width}
-            height={dimensions.window.height}
-            params={ParticleConfig}
+            params={props.config}
+            width="100vw"
+            height="100vh"
           />
 </div>);
     }
