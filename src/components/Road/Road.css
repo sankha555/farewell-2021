@@ -1,3 +1,19 @@
-.body{
-    
+.roadContainer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.road{
+    height: 60vh;
+    width: 100%;
+    overflow-x: scroll;
+    background-color: black;
+    position: relative;
+}
+
+.road p{
+    white-space: nowrap;
+    display: inline;
 }

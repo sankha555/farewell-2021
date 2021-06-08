@@ -1,0 +1,16 @@
+.milestone_container{
+    height: 100px;
+    width: 100px;
+    border-radius: 25px 25px 0 0;
+    background-color: yellow;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.milestone_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
