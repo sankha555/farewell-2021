@@ -1,7 +1,7 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 100,
+      value: 70,
     },
     size: {
       value: 3,
@@ -17,6 +17,7 @@ const particlesConfig = {
     },
   },
   interactivity: {
+      detectsOn: "window",
     events: {
       onhover: {
         enable: true,
@@ -26,7 +27,7 @@ const particlesConfig = {
   },
   background: {
     color: {
-      value: "#000000",
+      value: "#181A1B",
     },
   },
 };
