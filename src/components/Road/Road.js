@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Road.css';
 import Doodle from '../Doodle/Doodle';
 import Milestone from '../Milestone/Milestone';
-
+import CustomModal from '../Modal/Modal';
 
 function Road() {
     
@@ -60,8 +60,10 @@ function Road() {
 
     const milestones = ['First Year', 'Second Year', 'Third Year', 'Fourth Year'];
 
+
   return (
-      <React.Fragment>
+
+          <div className="roadContainer">
       <div
         ref={scrollRef}
         className="road"
@@ -72,8 +74,9 @@ function Road() {
                 {dots}
               </p>
               {milestones.map( (milestone, index) => <Milestone left={1250*(index+1)} milestone={milestone} />)}
-          </div>
-          </React.Fragment>
+              </div>
+              </div>
+       
     
   );
 }

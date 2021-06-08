@@ -1,6 +1,11 @@
+.roadContainer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 
 .road{
-    margin-top: 40vh;
     height: 60vh;
     width: 100%;
     overflow-x: scroll;
