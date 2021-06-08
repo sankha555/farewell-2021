@@ -15,12 +15,18 @@ const Layout = () => {
         setTimeout(() => setLoading(false), 2000);
     })
 
+if(loading){
     return (
-        <div className="layoutDiv">
-            {loading ? <Spinner /> : <Rotate />}
-        </div>
+            <Spinner/>
+        );}
+        else{
+    return(
+            <div className="layoutDiv">
+                 <Rotate/>
+            </div>);}
+    
         
-    )
+        
 };
 
 
