@@ -1,9 +1,7 @@
 import './Landing.css';
 import React, { Component } from 'react';
 import TextHover from './TextHover';
-
 import Code from './assets/Code.jpg';
-
 import { Animated } from 'react-animated-css';
 
 class Landing extends Component {
@@ -155,8 +153,6 @@ class Landing extends Component {
 							hoverActive={this.state.hovering}
 						/>
 						
-						
-					
 						
 					</div>
 				</div>
