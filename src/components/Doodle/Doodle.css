@@ -5,7 +5,7 @@
     border-top: 20px solid transparent; 
     border-left:20px solid rgb(255, 81, 0); 
     display: inline-block;
-    bottom: 15px;
+    bottom: 0px;
     left: 15px;
     position: absolute;
     z-index: 1;
