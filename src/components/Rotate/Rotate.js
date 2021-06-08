@@ -6,6 +6,8 @@ import { Dimensions } from "react-native";
 import {setState,useEffect,useState} from "react";
 import ParticleBackground from '../ParticleBackground/ParticleBackground';
 import ParticleConfig from './Particle-config';
+import Landing from '../LandingPage/Landing';
+
 const Rotate = () => {
 const window = Dimensions.get("window"); 
 
@@ -31,7 +33,7 @@ const window = Dimensions.get("window");
         </div>
     );
   } else {
-    return  <Road/> ; 
+    return  <Landing/> ; 
   }
 };
 export default Rotate;

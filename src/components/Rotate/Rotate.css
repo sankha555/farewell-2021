@@ -1,17 +1,17 @@
-html,
+/* html,
 body {
   /* background: black; */
-  height: 100%;
-  width: 100%;
-  /* overflow-x: hidden;
+/* height: 100%;
+width: 100%; */
+/* overflow-x: hidden;
   overflow-y: hidden; */
-}
-body {
+/* }  */
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 .phone-container {
   display: flex;
   align-items: center;

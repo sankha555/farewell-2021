@@ -1,10 +1,6 @@
-
-.bg {
+.bgParticles {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-#tsparticles {
 }

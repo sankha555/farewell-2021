@@ -7,6 +7,7 @@ import Road from '../components/Road/Road';
 import ParticleBackground from '../components/ParticleBackground/ParticleBackground';
 import './Layout.css';
 
+
 const Layout = () => {
    
     const [loading, setLoading] = useState(true);
@@ -28,7 +29,5 @@ if(loading){
         
         
 };
-
-
 
 export default Layout;

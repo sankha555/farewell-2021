@@ -1,0 +1,101 @@
+.Overlay {
+  position: relative;
+}
+.Header1 {
+  font-weight: 800;
+  text-transform: lowercase;
+  background-color: white;
+  font-size: 7rem !important;
+  font-family: "Montserrat", "Open Sans", sans-serif !important;
+  color: transparent;
+  text-align: center;
+  z-index: 10;
+  margin: 40px auto;
+  background-clip: text;
+  cursor: pointer;
+}
+
+.Header1:hover {
+  cursor: pointer;
+}
+
+.Half {
+  width: 50%;
+  position: absolute;
+  background-color: gray;
+  background-clip: text;
+  transition: all 0.2s ease-in-out;
+}
+.Header1::before {
+  content: attr(text);
+  position: absolute;
+  background-color: white;
+  background-clip: text;
+  width: 0;
+  direction: rtl;
+  right: 0;
+  z-index: 11;
+  transition: all 0.2s ease-in-out;
+}
+.Header1:hover::before {
+  width: 100%;
+}
+
+.Arrow {
+  width: 1vw;
+  height: 1vw;
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  position: absolute;
+  opacity: 0;
+  top: 60%;
+  right: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: ArrowHidden 0.4s forwards ease-in-out;
+}
+
+.Header1:hover .Arrow {
+  animation: ArrowVisible 0.4s forwards ease-in-out;
+}
+
+@keyframes ArrowVisible {
+  0% {
+    width: 0.5vw;
+    height: 0.5vw;
+    opacity: 1;
+    right: 0;
+  }
+  50% {
+    width: 0.5vw;
+    height: 0.5vw;
+    opacity: 1;
+    right: -60px;
+  }
+  100% {
+    height: 1vw;
+    width: 1vw;
+    opacity: 1;
+    right: -60px;
+  }
+}
+
+@keyframes ArrowHidden {
+  0% {
+    height: 1vw;
+    width: 1vw;
+    opacity: 1;
+    right: -60px;
+  }
+  50% {
+    width: 0.5vw;
+    height: 0.5vw;
+    opacity: 1;
+    right: -60px;
+  }
+  100% {
+    width: 0.5vw;
+    height: 0.5vw;
+    opacity: 0;
+    right: 0;
+  }
+}
