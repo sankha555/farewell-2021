@@ -26,8 +26,8 @@ const window = Dimensions.get("window");
         <div className="bg">
 <Particles
             params={props.config}
-            width={dimensions.window.width}
-            height={dimensions.window.height}
+            width="100vw"
+            height="100vh"
           />
 </div>);
     }
