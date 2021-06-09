@@ -32,11 +32,12 @@
   width: 100%;
   height: 190%;
   position: relative;
+  
   background-size: 200% 100%;
   background-image: linear-gradient(to right, white 25%, #253069 25%);
   opacity: 1;
   transition: ease-in all 0.4s;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .Background1 {
@@ -52,7 +53,9 @@
 }
 
 .MainContainer {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+
   text-align: center;
   position: absolute;
   display: flex;
@@ -71,8 +74,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  color: white;
-  font-weight: 900;
+  /* color: white;
+  font-weight: 900; */
   z-index: 11;
 }
 

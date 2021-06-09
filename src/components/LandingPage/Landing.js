@@ -76,88 +76,88 @@ class Landing extends Component {
 			</div>
 		);
 
-		 
-			Screen = (
-				<div className='Landing'>
-					<nav className="">
-						{/* <div className='Logo'>
+
+		Screen = (
+			<div className='Landing'>
+				<nav className="">
+					{/* <div className='Logo'>
 							<div className='red'>B</div>
 						</div> */}
-						<span className='Projects'>
-							<h4>
-								Hobbies{' '}
-								<span className='Headline' style={headLine}>
-									Hobbies{' '}
-								</span>
-							</h4>
-						</span>
-						{/* <div className='Menu'>
+					<span className='Projects'>
+						<h4>
+							Farewell{' '}
+							<span className='Headline' style={headLine}>
+								Farewell{' '}
+							</span>
+						</h4>
+					</span>
+					{/* <div className='Menu'>
 							<p>
 								More <span>//</span>
 							</p>
 						</div> */}
-					</nav>
-					<div className='Background1' style={backGround}></div>
-					<div className='BlueSlider' style={blueSlider}></div>
+				</nav>
+				<div className='Background1' style={backGround}></div>
+				<div className='BlueSlider' style={blueSlider}></div>
 
-					<div className='MainContainer' >
-						{' '}
-					
-						<TextHover
-							id={Code}
-							text='Code'
-							MouseEntered={this.mouseEntered}
-							MouseLeft={this.mouseLeft}
-							hoverActive={this.state.hovering}
-						/>
-						<TextHover
-							id={Code}
-							text='Code'
-							MouseEntered={this.mouseEntered}
-							MouseLeft={this.mouseLeft}
-							hoverActive={this.state.hovering}
-						/>
-						<TextHover
-							id={Code}
-							text='Code'
-							MouseEntered={this.mouseEntered}
-							MouseLeft={this.mouseLeft}
-							hoverActive={this.state.hovering}
-						/>
-						<TextHover
-							id={Code}
-							text='Code'
-							MouseEntered={this.mouseEntered}
-							MouseLeft={this.mouseLeft}
-							hoverActive={this.state.hovering}
-						/>
-						<TextHover
-							id={Code}
-							text='Code'
-							MouseEntered={this.mouseEntered}
-							MouseLeft={this.mouseLeft}
-							hoverActive={this.state.hovering}
-						/>
-						<TextHover
-							id={Code}
-							text='Code'
-							MouseEntered={this.mouseEntered}
-							MouseLeft={this.mouseLeft}
-							hoverActive={this.state.hovering}
-						/>
-						<TextHover
-							id={Code}
-							text='Code'
-							MouseEntered={this.mouseEntered}
-							MouseLeft={this.mouseLeft}
-							hoverActive={this.state.hovering}
-						/>
-						
-						
-					</div>
+				<div className='MainContainer' >
+					{' '}
+
+					<TextHover
+						id={Code}
+						text='Code'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/>
+					<TextHover
+						id={Code}
+						text='Code'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/>
+					<TextHover
+						id={Code}
+						text='Code'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/>
+					<TextHover
+						id={Code}
+						text='Code'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/>
+					<TextHover
+						id={Code}
+						text='Code'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/>
+					<TextHover
+						id={Code}
+						text='Code'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/>
+					<TextHover
+						id={Code}
+						text='Code'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/>
+
+
 				</div>
-			);
-		
+			</div>
+		);
+
 		return Screen;
 	}
 }
