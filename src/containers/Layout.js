@@ -6,6 +6,7 @@ import Spinner from '../components/Spinner/Spinner';
 import Road from '../components/Road/Road';
 import ParticleBackground from '../components/ParticleBackground/ParticleBackground';
 import './Layout.css';
+import Landing from '../components/LandingPage/Landing'
 
 
 const Layout = () => {
@@ -24,6 +25,7 @@ if(loading){
     return(
             <div className="layoutDiv">
                  <Rotate/>
+                 <Landing/>
             </div>);}
     
         

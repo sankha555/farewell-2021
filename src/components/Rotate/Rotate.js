@@ -32,7 +32,7 @@ const Rotate = () => {
       </div>
     );
   } else {
-    return  <Landing/> ; 
+    return null; 
   }
 };
 export default Rotate;

@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Road.css';
-import Doodle from '../Doodle/Doodle';
-import Milestone from '../Milestone/Milestone';
-import CustomModal from '../Modal/Modal';
-import Landing from '../LandingPage/Landing';
-import Rotate from '../Rotate/Rotate'
-import BackgroundImage from '../BackgroundImage/BackgroundImage'
+import '../../Road/Road.css';
+import Doodle from '../../Doodle/Doodle';
+import Milestone from '../../Milestone/Milestone';
+import CustomModal from '../../Modal/Modal';
+import Landing from '../../LandingPage/Landing';
+import Rotate from '../../Rotate/Rotate'
+import BackgroundImage from '../../BackgroundImage/BackgroundImage'
 
-function Road() {
+function NiravRoad() {
     
 
     const [position, setPosition] = useState(0);
@@ -84,4 +84,4 @@ function Road() {
   );
 }
 
-export default Road;
+export default NiravRoad;
