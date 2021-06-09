@@ -3,9 +3,11 @@ import "./Rotate.css";
 import Particles from "react-particles-js";
 import Road from "../../components/Road/Road";
 import { Dimensions } from "react-native";
-import { setState, useEffect, useState } from "react";
-import ParticleBackground from "../ParticleBackground/ParticleBackground";
-import ParticleConfig from "./Particle-config";
+import {setState,useEffect,useState} from "react";
+import ParticleBackground from '../ParticleBackground/ParticleBackground';
+import ParticleConfig from './Particle-config';
+import Landing from '../LandingPage/Landing';
+
 const Rotate = () => {
   const window = Dimensions.get("window");
 
@@ -30,7 +32,7 @@ const Rotate = () => {
       </div>
     );
   } else {
-    return <Road />;
+    return  <Landing/> ; 
   }
 };
 export default Rotate;

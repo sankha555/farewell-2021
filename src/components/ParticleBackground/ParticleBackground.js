@@ -23,7 +23,7 @@ const window = Dimensions.get("window");
   });
     return(
         
-        <div className="bg">
+        <div className="bgParticles">
 <Particles
             params={props.config}
             width="100vw"

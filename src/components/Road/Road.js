@@ -3,6 +3,8 @@ import './Road.css';
 import Doodle from '../Doodle/Doodle';
 import Milestone from '../Milestone/Milestone';
 import CustomModal from '../Modal/Modal';
+import Landing from '../LandingPage/Landing';
+
 
 function Road() {
     
@@ -61,8 +63,7 @@ function Road() {
     const milestones = ['First Year', 'Second Year', 'Third Year', 'Fourth Year'];
 
 
-  return (
-
+  return (<div>
           <div className="roadContainer">
       <div
         ref={scrollRef}
@@ -74,6 +75,7 @@ function Road() {
                 {dots}
               </p>
               {milestones.map( (milestone, index) => <Milestone left={1250*(index+1)} milestone={milestone} />)}
+              </div>
               </div>
               </div>
        

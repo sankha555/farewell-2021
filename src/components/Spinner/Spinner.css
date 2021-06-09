@@ -1,5 +1,4 @@
-
-.bg {
+.bgSpinner {
   position: absolute;
   top: 0;
   left: 0;
@@ -7,10 +6,6 @@
 }
 #spinnerdiv {
   margin: 15%;
-}
-#wrapD3Cube {
-  /* width: 250px; */
-  /* height: 213px; */
   margin: auto auto;
   display: flex;
   align-items: center;
@@ -22,14 +17,18 @@
   height: 30vh;
   width: 50vw;
 }
+#wrapD3Cube {
+  /* width: 250px; */
+  /* height: 213px; */
+}
 
 #spinner_txt {
   letter-spacing: 15px;
   font-size: 2.5ch;
   white-space: nowrap;
   color: white;
-  margin-right: 100px;
-  margin-top: 260px;
+  margin-left: 15px;
+  margin-top: 100px;
 }
 
 #D3Cube {
@@ -250,9 +249,9 @@
   }
 }
 
-.container {
+/* .container {
   background-color: red;
   position: relative;
   width: 100px;
   height: 100px;
-}
+} */
