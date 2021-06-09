@@ -3,10 +3,10 @@
 }
 .Header1 {
   font-weight: 800;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   background-color: white;
   font-size: 7rem !important;
-  font-family: "Montserrat", "Open Sans", sans-serif !important;
+  font-family: "Kaushan Script", "Open Sans", sans-serif !important;
   color: transparent;
   text-align: center;
   z-index: 10;
@@ -23,7 +23,7 @@
   width: 50%;
   /* height: fit-content; */
   position: absolute;
-  background-color: gray;
+  background-color: #a30d0d;
   background-clip: text;
   transition: all 0.2s ease-in-out;
 }

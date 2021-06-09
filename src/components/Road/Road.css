@@ -1,19 +1,20 @@
-.roadContainer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.roadContainer {
+  position: absolute;
+  mix-blend-mode: lighten;
+  bottom: 0;
+  width: 100%;
 }
 
-
-.road{
-    height: 60vh;
-    width: 100%;
-    overflow-x: scroll;
-    background-color: black;
-    position: relative;
+.road {
+  height: 200vh;
+  width: 100%;
+  overflow-x: scroll;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
 }
 
-.road p{
-    white-space: nowrap;
-    display: inline;
+.road p {
+  white-space: nowrap;
+  display: inline;
 }

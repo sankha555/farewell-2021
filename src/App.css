@@ -2,6 +2,7 @@
 *::before,
 ::after {
   word-wrap: unset !important;
+  text-decoration: none !important;
 }
 .App {
   text-align: center;

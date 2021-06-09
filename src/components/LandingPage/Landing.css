@@ -1,14 +1,12 @@
-*,
-*::before,
-::after {
-  word-wrap: unset !important;
+body {
+  overflow-x: hidden;
 }
 .Landing {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100vw;
   position: relative;
   box-sizing: border-box;
-  overflow: scroll;
+  /* /* overflow: scroll; */
   overflow-x: hidden;
 }
 .Loader {
@@ -30,14 +28,19 @@
 
 .BlueSlider {
   width: 100%;
+<<<<<<< HEAD
   /* height: 190%; */
   height: 250%;
+=======
+  height: 200%;
+>>>>>>> c8f5b3f01b65d750812fde0c14151112965b25bd
   position: relative;
+
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, white 25%, #253069 25%);
+  background-image: linear-gradient(to right, white 25%, #a30d0d 25%);
   opacity: 1;
   transition: ease-in all 0.4s;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .Background1 {
@@ -54,7 +57,13 @@
 
 .MainContainer {
   width: 100%;
+<<<<<<< HEAD
   /* height: 100vh; */
+=======
+  /* height: 100%; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+>>>>>>> c8f5b3f01b65d750812fde0c14151112965b25bd
   text-align: center;
   position: absolute;
   display: flex;
@@ -66,15 +75,16 @@
   margin: 30px auto;
 }
 nav {
+  margin: auto;
   box-sizing: content-box;
-  margin: 5px 10px;
+  /* margin: 5px 10px; */
   width: 99%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  color: white;
-  font-weight: 900;
+  /* color: white;
+  font-weight: 900; */
   z-index: 11;
 }
 
