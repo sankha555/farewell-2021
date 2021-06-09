@@ -21,6 +21,7 @@
 
 .Half {
   width: 50%;
+  /* height: fit-content; */
   position: absolute;
   background-color: gray;
   background-clip: text;
