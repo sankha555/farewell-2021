@@ -12,7 +12,7 @@ function CustomModal(props) {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>{props.text}</Button>
+      <Button variant="primary" id="openButton" onClick={handleShow} >{props.text}</Button>
       <Modal show={show} onHide={handleClose}>
         
         <Modal.Header id="header" closeButton>

@@ -1,16 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Road.css';
-import Doodle from '../Doodle/Doodle';
-import Milestone from '../Milestone/Milestone';
-import CustomModal from '../Modal/Modal';
-import Landing from '../LandingPage/Landing';
-import Rotate from '../Rotate/Rotate'
-import BackgroundImage from '../BackgroundImage/BackgroundImage'
-/*
-Slower the scroll speed
-*/
+import '../../Road/Road.css';
+import Doodle from '../../Doodle/Doodle';
+import Milestone from '../../Milestone/Milestone';
+import CustomModal from '../../Modal/Modal';
+import Landing from '../../LandingPage/Landing';
+import Rotate from '../../Rotate/Rotate'
+import BackgroundImage from '../../BackgroundImage/BackgroundImage'
 
-function Road() {
+function AyushRoad() {
     
 
     const [position, setPosition] = useState(0);
@@ -87,4 +84,4 @@ function Road() {
   );
 }
 
-export default Road;
+export default AyushRoad;

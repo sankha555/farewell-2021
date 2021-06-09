@@ -1,7 +1,20 @@
 import './Landing.css';
 import React, { Component } from 'react';
 import TextHover from './TextHover';
+import {NavLink} from 'react-router-dom';
 import Code from './assets/Code.jpg';
+// import Ayush from './assets/Ayush.jpg';
+// import Sparsh from './assets/Sparsh.jpg';
+// import Abhijeet from './assets/Abhijeet.jpg';
+// import Atmadeep from './assets/Atmadeep.jpg';
+// import Yash from './assets/Yash.jpg';
+// import Rahil from './assets/Rahil.jpg';
+// import Vishnupriya from './assets/Vishnupriya.jpg'
+// import Nikhil from './assets/Nikhil.jpg';
+// import Nirav from './assets/Nirav.jpg';
+
+
+
 import { Animated } from 'react-animated-css';
 
 class Landing extends Component {
@@ -102,57 +115,91 @@ class Landing extends Component {
 
 				<div className='MainContainer' >
 					{' '}
+					
+					
+					<NavLink to='/Abhijeet'>
+					<TextHover
+						id={Code}
+						text='Abhijeet'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/></NavLink>
+					
+					<NavLink to='/Ayush'>
+					<TextHover
+						id={Code}
+						text='Ayush'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/></NavLink>
 
+					<NavLink to='/Atmadeep'>
 					<TextHover
 						id={Code}
-						text='Code'
+						text='Atmadeep'
 						MouseEntered={this.mouseEntered}
 						MouseLeft={this.mouseLeft}
 						hoverActive={this.state.hovering}
 					/>
+					</NavLink>
+					
+					<NavLink to='/Sparsh'>
 					<TextHover
 						id={Code}
-						text='Code'
+						text='Sparsh'
 						MouseEntered={this.mouseEntered}
 						MouseLeft={this.mouseLeft}
 						hoverActive={this.state.hovering}
 					/>
-					<TextHover
-						id={Code}
-						text='Code'
-						MouseEntered={this.mouseEntered}
-						MouseLeft={this.mouseLeft}
-						hoverActive={this.state.hovering}
-					/>
-					<TextHover
-						id={Code}
-						text='Code'
-						MouseEntered={this.mouseEntered}
-						MouseLeft={this.mouseLeft}
-						hoverActive={this.state.hovering}
-					/>
-					<TextHover
-						id={Code}
-						text='Code'
-						MouseEntered={this.mouseEntered}
-						MouseLeft={this.mouseLeft}
-						hoverActive={this.state.hovering}
-					/>
-					<TextHover
-						id={Code}
-						text='Code'
-						MouseEntered={this.mouseEntered}
-						MouseLeft={this.mouseLeft}
-						hoverActive={this.state.hovering}
-					/>
-					<TextHover
-						id={Code}
-						text='Code'
-						MouseEntered={this.mouseEntered}
-						MouseLeft={this.mouseLeft}
-						hoverActive={this.state.hovering}
-					/>
+					</NavLink>
 
+					<NavLink to='/Yash'>
+					<TextHover
+						id={Code}
+						text='Yash'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/></NavLink>
+					
+					<NavLink to='/Rahil'>
+					<TextHover
+						id={Code}
+						text='Rahil'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/></NavLink>
+					
+					<NavLink to='/Vishnupriya'>
+					<TextHover
+						id={Code}
+						text='Vishnupriya'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/></NavLink>
+					<NavLink to='/Nikhil'>
+					<TextHover
+						id={Code}
+						text='Nikhil'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/>
+					</NavLink>
+					
+					
+					<NavLink to='/Nirav'>
+					<TextHover
+						id={Code}
+						text='Nirav'
+						MouseEntered={this.mouseEntered}
+						MouseLeft={this.mouseLeft}
+						hoverActive={this.state.hovering}
+					/></NavLink>
 
 				</div>
 			</div>
