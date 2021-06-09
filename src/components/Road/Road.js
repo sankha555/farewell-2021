@@ -6,6 +6,9 @@ import CustomModal from '../Modal/Modal';
 import Landing from '../LandingPage/Landing';
 import Rotate from '../Rotate/Rotate'
 import BackgroundImage from '../BackgroundImage/BackgroundImage'
+/*
+Slower the scroll speed
+*/
 
 function Road() {
     
