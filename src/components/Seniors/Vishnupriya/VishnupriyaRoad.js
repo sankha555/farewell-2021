@@ -8,9 +8,10 @@ import Rotate from '../../Rotate/Rotate'
 import BackgroundImage from '../../BackgroundImage/BackgroundImage'
 
 function VishnupriyaRoad() {
-    
 
     const [position, setPosition] = useState(0);
+
+    const speed = 0.4;  //set the speed here.
 
     const onWheel = (e) => {
         e.preventDefault();
@@ -19,11 +20,11 @@ function VishnupriyaRoad() {
 
         container.scrollTo({
             top: 0,
-            left: containerScrollPosition + e.deltaY
+            left: containerScrollPosition + e.deltaY*speed
         });
 
-        if ((position + e.deltaY*1.1 > 15) && (position+e.deltaY*1.1 < 5900)) {
-            setPosition(position + e.deltaY*1.1);
+        if ((position + e.deltaY*1.1*speed > 15) && (position+e.deltaY*1.1*speed < 5900)) {
+            setPosition(position + e.deltaY*1.1*speed);
         }
         
     };
@@ -37,29 +38,18 @@ function VishnupriyaRoad() {
         } )
     }
     
-    const moveRight = (e) => {
-        e.preventDefault();
-        if (e.key === ' ') {
-            setPosition(position + 50);
-        }
-        // const doodle = document.getElementById("moving_doodle");
-        // if (doodle) {
-        //     const doodlePosition = doodle.style.right;
-        //     doodle.style.right = doodlePosition + 50 + 'px';
-        // }
-    }
-
-    useEvent('keyup', moveRight);
+    // const moveRight = (e) => {
+    //     e.preventDefault();
+    //     if (e.key === ' ') {
+    //         setPosition(position + 50);
+    //     }
+    // }
+    // FOR IMPLEMENTING ANY ACTIONS OTHER THAN MOVING USE THIS
+    // useEvent('keyup', moveRight);
 
     
 
     const scrollRef = useRef(null);
-
-    
-    let dots = '.';
-    for (let i= 0; i < 200; i++) {
-        dots = dots.concat('*.*.*.');
-    }
 
     const milestones = ['First Year', 'Second Year', 'Third Year', 'Fourth Year'];
 
@@ -74,9 +64,6 @@ function VishnupriyaRoad() {
         onWheel={onWheel}
       > 
               <Doodle id="moving_doodle" move={position}/>
-              <p style={{ color: "black" }}>
-                {dots}
-              </p>
               {milestones.map( (milestone, index) => <Milestone left={1250*(index+1)} milestone={milestone} />)}
               </div>
               </div>
