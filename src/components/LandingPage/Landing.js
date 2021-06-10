@@ -16,9 +16,16 @@ import Code from "./assets/Code.jpg";
 import { Animated } from "react-animated-css";
 
 class Landing extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mounted: false,
+    };
+  }
   state = {
     hovering: 0,
     background: null,
+
     // loader: 1,
     // logoCollapser: {},
   };
@@ -39,6 +46,9 @@ class Landing extends Component {
   //   	this.setState({ loader: 0 });
   //   }, 4200);
   // }
+  componentDidMount() {
+    this.setState({ mounted: true });
+  }
   mouseEntered = (event) => {
     this.setState({ hovering: 1, background: event.target.id });
   };
@@ -73,6 +83,10 @@ class Landing extends Component {
       };
 
       footer = { transform: "translateY(-3.5vw)" };
+    }
+    let height;
+    if (this.state.mounted) {
+      height = document.querySelector(".MainContainer");
     }
 
     let Screen = (
@@ -110,7 +124,7 @@ class Landing extends Component {
         <div className="Background1" style={backGround}></div>
         <div className="BlueSlider" style={blueSlider}></div>
 
-        <div className="MainContainer">
+        <div className="MainContainer" style={{ height: { height } }}>
           {" "}
           <NavLink to="/Abhijeet">
             <TextHover

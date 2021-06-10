@@ -28,7 +28,7 @@ body {
 
 .BlueSlider {
   width: 100%;
-  height: 200%;
+  height: 160%;
   position: relative;
 
   background-size: 200% 100%;
@@ -53,8 +53,8 @@ body {
 .MainContainer {
   width: 100%;
   /* height: 100%; */
-  overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
   text-align: center;
   position: absolute;
   display: flex;
