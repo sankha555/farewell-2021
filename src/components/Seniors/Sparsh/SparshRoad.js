@@ -10,22 +10,37 @@ import BackgroundImage from '../../BackgroundImage/BackgroundImage'
 function SparshRoad() {
     
 
-    const [position, setPosition] = useState(0);
+   const [position, setPosition] = useState(0);
+
+    const [modalShown, setModalShown] = useState(false);
+
+    function handleClose() {
+        
+        setModalShown(false);
+    }
+
+    function handleShow() {
+        setModalShown(true);
+    }
+
+    const speed = 0.4;  //set the speed here.
 
     const onWheel = (e) => {
-        e.preventDefault();
-        const container = scrollRef.current;
-        const containerScrollPosition = scrollRef.current.scrollLeft;
 
-        container.scrollTo({
-            top: 0,
-            left: containerScrollPosition + e.deltaY
-        });
+        if (!modalShown) {
+            const container = scrollRef.current;
+            const containerScrollPosition = scrollRef.current.scrollLeft;
 
-        if ((position + e.deltaY*1.1 > 15) && (position+e.deltaY*1.1 < 5900)) {
-            setPosition(position + e.deltaY*1.1);
+            container.scrollTo({
+                top: 0,
+                left: containerScrollPosition + e.deltaY*speed
+            });
+
+            if ((position + e.deltaY*1.1*speed > 15) && (position+e.deltaY*1.1*speed < 5900)) {
+                setPosition(position + e.deltaY*1.1*speed);
+            }
+            
         }
-        
     };
 
     function useEvent(event, handler){
@@ -37,29 +52,18 @@ function SparshRoad() {
         } )
     }
     
-    const moveRight = (e) => {
-        e.preventDefault();
-        if (e.key === ' ') {
-            setPosition(position + 50);
-        }
-        // const doodle = document.getElementById("moving_doodle");
-        // if (doodle) {
-        //     const doodlePosition = doodle.style.right;
-        //     doodle.style.right = doodlePosition + 50 + 'px';
-        // }
-    }
-
-    useEvent('keyup', moveRight);
+    // const moveRight = (e) => {
+    //     e.preventDefault();
+    //     if (e.key === ' ') {
+    //         setPosition(position + 50);
+    //     }
+    // }
+    // FOR IMPLEMENTING ANY ACTIONS OTHER THAN MOVING USE THIS
+    // useEvent('keyup', moveRight);
 
     
 
     const scrollRef = useRef(null);
-
-    
-    let dots = '.';
-    for (let i= 0; i < 200; i++) {
-        dots = dots.concat('*.*.*.');
-    }
 
     const milestones = ['First Year', 'Second Year', 'Third Year', 'Fourth Year'];
 
@@ -74,10 +78,7 @@ function SparshRoad() {
         onWheel={onWheel}
       > 
               <Doodle id="moving_doodle" move={position}/>
-              <p style={{ color: "black" }}>
-                {dots}
-              </p>
-              {milestones.map( (milestone, index) => <Milestone left={1250*(index+1)} milestone={milestone} />)}
+              {milestones.map((milestone, index) => <Milestone left={1250 * (index + 1)} milestone={milestone} showModal={modalShown} handleClose={handleClose} handleShow={handleShow}/>)}
               </div>
               </div>
               </div>

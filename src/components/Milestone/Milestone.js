@@ -3,11 +3,12 @@ import './Milestone.css';
 import CustomModal from '../Modal/Modal';
 
 const Milestone = (props) => {
+
     return(
         <div className="milestone_container" style={{ left:`${props.left}px`}}>
             
             <div className="milestone_text">
-                <CustomModal  text={props.milestone}/>
+                <CustomModal text={props.milestone} showModal={props.showModal} handleClose={props.handleClose} handleShow={props.handleShow}/>
                 {/* <div>{props.milestone}</div> */}
             </div>
         </div>

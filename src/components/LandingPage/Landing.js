@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import TextHover from './TextHover';
 import {NavLink} from 'react-router-dom';
 import Code from './assets/Code.jpg';
+import { Dimensions } from "react-native";
 // import Ayush from './assets/Ayush.jpg';
 // import Sparsh from './assets/Sparsh.jpg';
 // import Abhijeet from './assets/Abhijeet.jpg';
@@ -204,7 +205,8 @@ class Landing extends Component {
 				</div>
 			</div>
 		);
-
+		
+		
 		return Screen;
 	}
 }
