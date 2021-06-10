@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/farewell-2021/static/css/main.241c2c07.chunk.css",
-    "main.js": "/farewell-2021/static/js/main.8cbf7b5a.chunk.js",
-    "main.js.map": "/farewell-2021/static/js/main.8cbf7b5a.chunk.js.map",
+    "main.js": "/farewell-2021/static/js/main.9a7b709f.chunk.js",
+    "main.js.map": "/farewell-2021/static/js/main.9a7b709f.chunk.js.map",
     "runtime-main.js": "/farewell-2021/static/js/runtime-main.148f147a.js",
     "runtime-main.js.map": "/farewell-2021/static/js/runtime-main.148f147a.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/farewell-2021/static/css/2.4c97ca4f.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.c59f66be.chunk.js",
     "static/css/main.241c2c07.chunk.css",
-    "static/js/main.8cbf7b5a.chunk.js"
+    "static/js/main.9a7b709f.chunk.js"
   ]
 }
