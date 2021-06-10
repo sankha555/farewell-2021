@@ -23,7 +23,8 @@
   width: 50%;
   /* height: fit-content; */
   position: absolute;
-  background-color: #a30d0d;
+  /* background-color: #a30d0d; */
+  background-color: midnightblue;
   background-clip: text;
   transition: all 0.2s ease-in-out;
 }

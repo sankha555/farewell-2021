@@ -20,6 +20,7 @@ class Landing extends Component {
     super(props);
     this.state = {
       mounted: false,
+      height: 0,
     };
   }
   state = {
@@ -47,7 +48,15 @@ class Landing extends Component {
   //   }, 4200);
   // }
   componentDidMount() {
-    this.setState({ mounted: true });
+    // let heightElem = document.querySelector(".Header1").offsetHeight * 9;
+    let heightElem =
+      document.querySelector(".MainContainer").offsetHeight +
+      document.querySelector(".Headline").offsetHeight;
+    console.log(heightElem);
+    this.setState({ height: heightElem });
+    console.log(this.state.height);
+    // document.querySelector(".BlueSlider").style.height =
+    //   this.state.height + "px";
   }
   mouseEntered = (event) => {
     this.setState({ hovering: 1, background: event.target.id });
@@ -84,11 +93,6 @@ class Landing extends Component {
 
       footer = { transform: "translateY(-3.5vw)" };
     }
-    let height;
-    if (this.state.mounted) {
-      height = document.querySelector(".MainContainer");
-    }
-
     let Screen = (
       <div className="Landing">
         {/* <div className='Loader' style={{ ...this.state.logoCollapser }}>
@@ -122,9 +126,15 @@ class Landing extends Component {
 						</div> */}
         </nav>
         <div className="Background1" style={backGround}></div>
-        <div className="BlueSlider" style={blueSlider}></div>
+        <div
+          className="BlueSlider"
+          style={{
+            backgroundPosition: "100% 0",
+            height: this.state.height,
+          }}
+        ></div>
 
-        <div className="MainContainer" style={{ height: { height } }}>
+        <div className="MainContainer">
           {" "}
           <NavLink to="/Abhijeet">
             <TextHover
@@ -214,5 +224,4 @@ class Landing extends Component {
     return Screen;
   }
 }
-
 export default Landing;
