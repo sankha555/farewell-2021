@@ -5,15 +5,14 @@ import './Modal.css'
 
 
 function CustomModal(props) {
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  console.log(props.showModal)
+ 
 
   return (
     <>
-      <Button variant="primary" id="openButton" onClick={handleShow} >{props.text}</Button>
-      <Modal show={show} onHide={handleClose}>
+      <Button variant="primary" id="openButton" onClick={props.handleShow} >{props.text}</Button>
+      <Modal show={props.showModal} onHide={props.handleClose}>
         
         <Modal.Header id="header" closeButton>
                 <Modal.Title id="title">Where is the good in goodbye</Modal.Title>
@@ -33,8 +32,8 @@ function CustomModal(props) {
                 </Modal.Body>
         
               <Modal.Footer id="footer">
-                {/* <Button variant="secondary" onClick={handleClose}>CLOSE</Button> */}
-                <Button id="button" variant="primary"onClick={handleClose}>CLOSE</Button>
+                {/* <Button variant="secondary" onClick={props.handleClose}>CLOSE</Button> */}
+                <Button id="button" variant="primary" onClick={props.handleClose}>CLOSE</Button>
               </Modal.Footer>
       </Modal>
     </>

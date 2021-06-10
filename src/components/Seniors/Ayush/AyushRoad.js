@@ -12,22 +12,35 @@ function AyushRoad() {
 
     const [position, setPosition] = useState(0);
 
+    const [modalShown, setModalShown] = useState(false);
+
+    function handleClose() {
+        
+        setModalShown(false);
+    }
+
+    function handleShow() {
+        setModalShown(true);
+    }
+
     const speed = 0.4;  //set the speed here.
 
     const onWheel = (e) => {
-        e.preventDefault();
-        const container = scrollRef.current;
-        const containerScrollPosition = scrollRef.current.scrollLeft;
 
-        container.scrollTo({
-            top: 0,
-            left: containerScrollPosition + e.deltaY*speed
-        });
+        if (!modalShown) {
+            const container = scrollRef.current;
+            const containerScrollPosition = scrollRef.current.scrollLeft;
 
-        if ((position + e.deltaY*1.1*speed > 15) && (position+e.deltaY*1.1*speed < 5900)) {
-            setPosition(position + e.deltaY*1.1*speed);
+            container.scrollTo({
+                top: 0,
+                left: containerScrollPosition + e.deltaY*speed
+            });
+
+            if ((position + e.deltaY*1.1*speed > 15) && (position+e.deltaY*1.1*speed < 5900)) {
+                setPosition(position + e.deltaY*1.1*speed);
+            }
+            
         }
-        
     };
 
     function useEvent(event, handler){
@@ -65,7 +78,7 @@ function AyushRoad() {
         onWheel={onWheel}
       > 
               <Doodle id="moving_doodle" move={position}/>
-              {milestones.map( (milestone, index) => <Milestone left={1250*(index+1)} milestone={milestone} />)}
+              {milestones.map((milestone, index) => <Milestone left={1250 * (index + 1)} milestone={milestone} showModal={modalShown} handleClose={handleClose} handleShow={handleShow}/>)}
               </div>
               </div>
               </div>
