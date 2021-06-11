@@ -3,6 +3,7 @@
 }
 .Header1 {
   font-weight: 800;
+  width: 100%;
   /* text-transform: lowercase; */
   background-color: white;
   font-size: 7rem !important;
@@ -24,7 +25,7 @@
   /* height: fit-content; */
   position: absolute;
   /* background-color: #a30d0d; */
-  background-color: midnightblue;
+  background-color: #a30d0d;
   background-clip: text;
   transition: all 0.2s ease-in-out;
 }

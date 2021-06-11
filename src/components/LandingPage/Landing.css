@@ -71,9 +71,9 @@ body {
 }
 nav {
   margin: auto;
-  box-sizing: content-box;
+  box-sizing: b-box;
   /* margin: 5px 10px; */
-  width: 99%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,8 +93,8 @@ h4 {
   font-weight: 100 !important;
   font-family: "Montserrat", "Open Sans", sans-serif;
   letter-spacing: 2px;
-  font-size: 1.5rem;
-  background: linear-gradient(to right, #253069 50%, white 50%);
+  font-size: 2rem;
+  background: linear-gradient(to right, #a30d0d 50%, white 50%);
   color: transparent;
   background-clip: text;
 }
@@ -129,39 +129,4 @@ h4 {
   justify-content: center;
 }
 
-footer {
-  transform: rotate(-90deg);
-  overflow: hidden;
-  position: absolute;
-  left: 2vw;
-  bottom: 30vh;
-  transition: all 0.2s ease-in-out;
-  height: 3.5vw;
-}
-.Footer {
-  top: 0;
-  margin-bottom: 0;
-  color: #253069;
-  transition: all 0.2s ease-in-out;
-}
-.Footer2 {
-  transition: all 0.2s ease-in-out;
-  color: white;
-  /* top:3.5vw; */
-}
-.Pencil > img {
-  width: 3em;
-  height: 3em;
-}
-.Pencil {
-  background-color: red;
-  border-radius: 50%;
-  width: 3em;
-  text-align: center;
-  height: 3em;
-  padding: 0.7rem;
-  position: absolute;
-  margin-left: 92vw;
-  margin-top: 75vh;
-  margin-right: 10px;
-}
+

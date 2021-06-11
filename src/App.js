@@ -1,8 +1,6 @@
 import React from "react-transition-group";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Layout from "./containers/Layout";
-import "./App.css";
-import Road from "./components/Road/Road";
 import YashRoad from './components/Seniors/Yash/YashRoad'
 import NiravRoad from './components/Seniors/Nirav/NiravRoad'
 import AyushRoad from './components/Seniors/Ayush/AyushRoad'
@@ -12,6 +10,7 @@ import RahilRoad from './components/Seniors/Rahil/RahilRoad'
 import NikhilRoad from './components/Seniors/Nikhil/NikhilRoad'
 import VishnupriyaRoad from './components/Seniors/Vishnupriya/VishnupriyaRoad'
 import SparshRoad from './components/Seniors/Sparsh/SparshRoad'
+import "./App.css";
 
 function App() {
   return (
