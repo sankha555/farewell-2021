@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import TextHover from "./TextHover";
 import { NavLink } from "react-router-dom";
 import Code from "./assets/Code.jpg";
+import { Dimensions } from "react-native";
 // import Ayush from './assets/Ayush.jpg';
 // import Sparsh from './assets/Sparsh.jpg';
 // import Abhijeet from './assets/Abhijeet.jpg';
@@ -77,6 +78,7 @@ class Landing extends Component {
     if (this.state.hovering) {
       blueSlider = {
         backgroundPosition: "100% 0",
+        height: this.state.height,
       };
       backGround = {
         background: `url(${this.state.background})`,
@@ -128,10 +130,7 @@ class Landing extends Component {
         <div className="Background1" style={backGround}></div>
         <div
           className="BlueSlider"
-          style={{
-            backgroundPosition: "100% 0",
-            height: this.state.height,
-          }}
+          style={{ backgroundPosition: "100% 0", height: this.state.height }}
         ></div>
 
         <div className="MainContainer">
