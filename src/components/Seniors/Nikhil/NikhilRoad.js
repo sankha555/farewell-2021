@@ -69,7 +69,7 @@ function NikhilRoad() {
 
 
   return (<div>
-        <Rotate/>
+        {/* <Rotate/> */}
         <BackgroundImage/>
           <div className="roadContainer">
       <div

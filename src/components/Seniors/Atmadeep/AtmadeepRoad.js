@@ -69,7 +69,7 @@ function AtmadeepRoad() {
 
 
   return (<div>
-        <Rotate/>
+        {/* <Rotate/> */}
         <BackgroundImage/>
           <div className="roadContainer">
       <div

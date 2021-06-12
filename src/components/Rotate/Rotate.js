@@ -8,7 +8,7 @@ import ParticleBackground from '../ParticleBackground/ParticleBackground';
 import ParticleConfig from './Particle-config';
 import Landing from '../LandingPage/Landing';
 
-const Rotate = () => {
+const Rotate = ({rtag}) => {
   const window = Dimensions.get("window");
 
   const [dimensions, setDimensions] = useState({ window });
@@ -32,7 +32,7 @@ const Rotate = () => {
       </div>
     );
   } else {
-    return null; 
+    return <>{rtag}</>; 
   }
 };
 export default Rotate;
