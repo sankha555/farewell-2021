@@ -6,8 +6,7 @@ import './Modal.css'
 
 function CustomModal(props) {
 
-  console.log(props.showModal)
- 
+
 
   return (
     <>
