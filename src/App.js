@@ -10,24 +10,25 @@ import RahilRoad from './components/Seniors/Rahil/RahilRoad'
 import NikhilRoad from './components/Seniors/Nikhil/NikhilRoad'
 import VishnupriyaRoad from './components/Seniors/Vishnupriya/VishnupriyaRoad'
 import SparshRoad from './components/Seniors/Sparsh/SparshRoad'
+import Landing from './components/LandingPage/Landing';
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter basename={window.location.pathname || ''}>
     <div className="App">
-      {/* <Layout /> */}
-     <Switch>
-      <Route path='/Nirav' component={NiravRoad}/>
-      <Route path='/Sparsh' component={SparshRoad}/>
-      <Route path='/Abhijeet' component={AbhijeetRoad}/>
-      <Route path='/Atmadeep' component={AtmadeepRoad}/>
-      <Route path='/Vishnupriya' component={VishnupriyaRoad}/>
-      <Route path='/Yash' component={YashRoad}/>
-      <Route path='/Rahil' component={RahilRoad}/>
-      <Route path='/Ayush' component={AyushRoad}/>
-      <Route path='/Nikhil' component={NikhilRoad}/>
-      <Route path='/'  exact component={Layout}/>
+      {/* <Layout /> */}               
+     <Switch>                  
+      <Route path='/Nirav' component={()=><Layout tag={<NiravRoad/>}/>}/>
+      <Route path='/Sparsh' component={()=><Layout tag={<SparshRoad/>}/>}/>
+      <Route path='/Abhijeet' component={()=><Layout tag={<AbhijeetRoad/>}/>}/>
+      <Route path='/Atmadeep' component={()=><Layout tag={<AtmadeepRoad/>}/>}/>
+      <Route path='/Vishnupriya' component={()=><Layout tag={<VishnupriyaRoad/>}/>}/>
+      <Route path='/Yash' component={()=><Layout tag={<YashRoad/>}/>}/>
+      <Route path='/Rahil' component={()=><Layout tag={<RahilRoad/>}/>}/>
+      <Route path='/Ayush' component={()=><Layout tag={<AyushRoad/>}/>}/>
+      <Route path='/Nikhil' component={()=><Layout tag={<NikhilRoad/>}/>}/>
+      <Route path='/'  exact component={()=><Layout tag={<Landing/>}/>}/>
       </Switch>
       
 

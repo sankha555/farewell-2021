@@ -3,4 +3,4 @@
 - [ ] Heading
 - [ ] Fix Modal scrolls with Road (Or stop moving road simultaneously)
 - [ ] Slow speed
-- [ ] Fix Landing page loading below on rotate screen page
+- [x] Fix Landing page loading below on rotate screen page
