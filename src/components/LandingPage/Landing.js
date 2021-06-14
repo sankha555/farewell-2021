@@ -57,6 +57,7 @@ class Landing extends Component {
 		};
 		let headLine = {};
 
+
 		let footer = {};
 		if (this.state.hovering) {
 			blueSlider = {
@@ -112,7 +113,7 @@ class Landing extends Component {
 						</div> */}
 				</nav>
 				<div className='Background1' style={backGround}></div>
-				<div className='BlueSlider' style={blueSlider}></div>
+				<div className='BlueSlider' id="blue007" style={blueSlider}></div>
 
 				<div className='MainContainer' >
 					{' '}

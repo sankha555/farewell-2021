@@ -7,9 +7,9 @@ import Landing from '../../LandingPage/Landing';
 import Rotate from '../../Rotate/Rotate'
 import BackgroundImage from '../../BackgroundImage/BackgroundImage'
 
-function VishnupriyaRoad() {
 
-    const [position, setPosition] = useState(0);
+function VishnupriyaRoad() {
+ const [position, setPosition] = useState(0);
 
     const [modalShown, setModalShown] = useState(false);
 
@@ -22,7 +22,8 @@ function VishnupriyaRoad() {
         setModalShown(true);
     }
 
-    const speed = 0.4;  //set the speed here.
+    const speed = 0.25;  //set the wheel speed here.
+    const speed_2 = 2; //set arrow keys speed here.
 
     const onWheel = (e) => {
 
@@ -51,15 +52,50 @@ function VishnupriyaRoad() {
         } )
     }
     
-    // const moveRight = (e) => {
-    //     e.preventDefault();
-    //     if (e.key === ' ') {
-    //         setPosition(position + 50);
-    //     }
-    // }
-    // FOR IMPLEMENTING ANY ACTIONS OTHER THAN MOVING USE THIS
-    // useEvent('keyup', moveRight);
+    const moveRight = (e) => {
+        e.preventDefault();
+        if (e.key === 'ArrowRight') {
+            
+            if (!modalShown) {
+            const container = scrollRef.current;
+            const containerScrollPosition = scrollRef.current.scrollLeft;
 
+            container.scrollTo({
+                top: 0,
+                left: containerScrollPosition + 10*speed_2
+            });
+
+            if ((position + 10*1.1*speed_2 > 15) && (position+10*1.1*speed_2 < 5900)) {
+                setPosition(position + 10*1.1*speed_2);
+            }
+            
+        }
+        }
+    }
+
+    const moveLeft = (e) => {
+        e.preventDefault();
+        if (e.key === 'ArrowLeft') {
+        
+            if (!modalShown) {
+            const container = scrollRef.current;
+            const containerScrollPosition = scrollRef.current.scrollLeft;
+
+            container.scrollTo({
+                top: 0,
+                left: containerScrollPosition - 10*speed_2
+            });
+
+            if ((position - 10*1.1*speed_2 > 30) && (position-10*1.1*speed_2 < 5900)) {
+                setPosition(position - 10*1.1*speed_2);
+            }
+            
+        }
+        }
+    }
+    
+    useEvent('keydown', moveRight);
+    useEvent('keydown', moveLeft);
     
 
     const scrollRef = useRef(null);
@@ -74,7 +110,7 @@ function VishnupriyaRoad() {
       <div
         ref={scrollRef}
         className="road"
-        onWheel={onWheel}
+              onWheel={onWheel}
       > 
               <Doodle id="moving_doodle" move={position}/>
               {milestones.map((milestone, index) => <Milestone left={1250 * (index + 1)} milestone={milestone} showModal={modalShown} handleClose={handleClose} handleShow={handleShow}/>)}

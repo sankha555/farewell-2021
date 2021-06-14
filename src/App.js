@@ -15,7 +15,7 @@ import SparshRoad from './components/Seniors/Sparsh/SparshRoad'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ''}>
     <div className="App">
       {/* <Layout /> */}
      <Switch>

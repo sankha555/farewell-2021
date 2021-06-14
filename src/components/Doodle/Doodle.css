@@ -9,4 +9,5 @@
     left: 15px;
     position: absolute;
     z-index: 1;
+    transition: transform linear;
 }
