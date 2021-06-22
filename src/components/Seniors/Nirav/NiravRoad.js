@@ -8,114 +8,143 @@ import Rotate from '../../Rotate/Rotate'
 import BackgroundImage from '../../BackgroundImage/BackgroundImage'
 
 function NiravRoad() {
-const [position, setPosition] = useState(0);
+  const [position, setPosition] = useState(0);
 
-    const [modalShown, setModalShown] = useState(false);
+  const [modalShown, setModalShown] = useState(false);
 
-    function handleClose() {
-        
-        setModalShown(false);
+  function handleClose() {
+    setModalShown(false);
+  }
+
+  function handleShow() {
+    setModalShown(true);
+  }
+
+  const speed = 0.25; //set the wheel speed here.
+  const speed_2 = 2; //set arrow keys speed here.
+
+  const onWheel = (e) => {
+    if (!modalShown) {
+      const container = scrollRef.current;
+      const containerScrollPosition = scrollRef.current.scrollLeft;
+
+      container.scrollTo({
+        top: 0,
+        left: containerScrollPosition + e.deltaY * speed,
+      });
+
+      if (
+        position + e.deltaY * 1.1 * speed > 15 &&
+        position + e.deltaY * 1.1 * speed < 5900
+      ) {
+        setPosition(position + e.deltaY * 1.1 * speed);
+      }
     }
+  };
 
-    function handleShow() {
-        setModalShown(true);
+  function useEvent(event, handler) {
+    useEffect(() => {
+      window.addEventListener(event, handler);
+      return function cleanup() {
+        window.removeEventListener(event, handler);
+      };
+    });
+  }
+
+  const moveRight = (e) => {
+    e.preventDefault();
+    if (e.key === "ArrowRight") {
+      if (!modalShown) {
+        const container = scrollRef.current;
+        const containerScrollPosition = scrollRef.current.scrollLeft;
+
+        container.scrollTo({
+          top: 0,
+          left: containerScrollPosition + 10 * speed_2,
+        });
+
+        if (
+          position + 10 * 1.1 * speed_2 > 15 &&
+          position + 10 * 1.1 * speed_2 < 5900
+        ) {
+          setPosition(position + 10 * 1.1 * speed_2);
+        }
+      }
     }
+  };
 
-    const speed = 0.25;  //set the wheel speed here.
-    const speed_2 = 2; //set arrow keys speed here.
+  const moveLeft = (e) => {
+    e.preventDefault();
+    if (e.key === "ArrowLeft") {
+      if (!modalShown) {
+        const container = scrollRef.current;
+        const containerScrollPosition = scrollRef.current.scrollLeft;
 
-    const onWheel = (e) => {
+        container.scrollTo({
+          top: 0,
+          left: containerScrollPosition - 10 * speed_2,
+        });
 
-        if (!modalShown) {
-            const container = scrollRef.current;
-            const containerScrollPosition = scrollRef.current.scrollLeft;
-
-            container.scrollTo({
-                top: 0,
-                left: containerScrollPosition + e.deltaY*speed
-            });
-
-            if ((position + e.deltaY*1.1*speed > 15) && (position+e.deltaY*1.1*speed < 5900)) {
-                setPosition(position + e.deltaY*1.1*speed);
-            }
-            
+        if (
+          position - 10 * 1.1 * speed_2 > 30 &&
+          position - 10 * 1.1 * speed_2 < 5900
+        ) {
+          setPosition(position - 10 * 1.1 * speed_2);
         }
-    };
-
-    function useEvent(event, handler){
-        useEffect(() => {
-            window.addEventListener(event, handler);
-            return function cleanup() {
-                window.removeEventListener(event, handler);
-            }
-        } )
+      }
     }
-    
-    const moveRight = (e) => {
-        e.preventDefault();
-        if (e.key === 'ArrowRight') {
-            
-            if (!modalShown) {
-            const container = scrollRef.current;
-            const containerScrollPosition = scrollRef.current.scrollLeft;
+  };
 
-            container.scrollTo({
-                top: 0,
-                left: containerScrollPosition + 10*speed_2
-            });
+  useEvent("keydown", moveRight);
+  useEvent("keydown", moveLeft);
 
-            if ((position + 10*1.1*speed_2 > 15) && (position+10*1.1*speed_2 < 5900)) {
-                setPosition(position + 10*1.1*speed_2);
-            }
-            
-        }
-        }
-    }
+  const scrollRef = useRef(null);
 
-    const moveLeft = (e) => {
-        e.preventDefault();
-        if (e.key === 'ArrowLeft') {
-        
-            if (!modalShown) {
-            const container = scrollRef.current;
-            const containerScrollPosition = scrollRef.current.scrollLeft;
+  const milestones = [
+    {
+      milestoneText: "First Year",
+      imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "HEY",
+    },
+    {
+      milestoneText: "Second Year",
+      imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "HEY",
+    },
+    {
+      milestoneText: "Third Year",
+      imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "HEY",
+    },
+    {
+      milestoneText: "Fourth Year",
+      imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "HEY",
+    },
+  ];
 
-            container.scrollTo({
-                top: 0,
-                left: containerScrollPosition - 10*speed_2
-            });
+  return (
+    <div>
+      {/* <Rotate/> */}
+      <BackgroundImage />
+      <div className="roadContainer">
+        <div ref={scrollRef} className="road" onWheel={onWheel}>
+          <Doodle id="moving_doodle" move={position} />
 
-            if ((position - 10*1.1*speed_2 > 30) && (position-10*1.1*speed_2 < 5900)) {
-                setPosition(position - 10*1.1*speed_2);
-            }
-            
-        }
-        }
-    }
-    
-    useEvent('keydown', moveRight);
-    useEvent('keydown', moveLeft);
-    
-
-    const scrollRef = useRef(null);
-
-    const milestones = ['First Year', 'Second Year', 'Third Year', 'Fourth Year'];
-
-
-  return (<div>
-        {/* <Rotate/> */}
-        <BackgroundImage/>
-          <div className="roadContainer">
-      <div
-        ref={scrollRef}
-        className="road"
-              onWheel={onWheel}
-      > 
-              <Doodle id="moving_doodle" move={position}/>
-              {milestones.map((milestone, index) => <Milestone left={1250 * (index + 1)} milestone={milestone} showModal={modalShown} handleClose={handleClose} handleShow={handleShow}/>)}
-              </div>
-              </div>
-              </div>
+          {milestones.map((milestone, index) => (
+            <Milestone
+              left={1250 * (index + 1)}
+              milestone={milestone.milestoneText}
+              showModal={modalShown}
+              handleClose={handleClose}
+              handleShow={handleShow}
+              imagePath={milestone.imagePath}
+              modalText={milestone.modalText}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 

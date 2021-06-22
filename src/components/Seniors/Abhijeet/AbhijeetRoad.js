@@ -6,9 +6,14 @@ import CustomModal from '../../Modal/Modal';
 import Landing from '../../LandingPage/Landing';
 import Rotate from '../../Rotate/Rotate'
 import BackgroundImage from '../../BackgroundImage/BackgroundImage'
+import lightboxcss from '../../../../node_modules/lightbox2/src/css/lightbox.css'
+import lightboxjs from '../../../../node_modules/lightbox2/src/js/lightbox.js'
+
 
 function AbhijeetRoad() {
  const [position, setPosition] = useState(0);
+
+   
 
     const [modalShown, setModalShown] = useState(false);
 
@@ -99,23 +104,67 @@ function AbhijeetRoad() {
 
     const scrollRef = useRef(null);
 
-    const milestones = ['First Year', 'Second Year', 'Third Year', 'Fourth Year'];
+    const milestones = [
+      {
+        milestoneText: "First Year",
+        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+        modalText: "HEY",
+        modalTitle: "HEllo",
+      },
+      {
+        milestoneText: "Second Year",
+        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+        modalText: "HEY",
+        modalTitle: "HEllo",
+      },
+      {
+        milestoneText: "Third Year",
+        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+        modalText: "HEY",
+        modalTitle: "HEllo",
+      },
+      {
+        milestoneText: "Fourth Year",
+        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+        modalText: "HEY",
+        modalTitle: "HEllo",
+      },
+    ];
 
 
-  return (<div>
-        {/* <Rotate/> */}
-        <BackgroundImage/>
-          <div className="roadContainer">
-      <div
-        ref={scrollRef}
-        className="road"
-              onWheel={onWheel}
-      > 
-              <Doodle id="moving_doodle" move={position}/>
-              {milestones.map((milestone, index) => <Milestone left={1250 * (index + 1)} milestone={milestone} showModal={modalShown} handleClose={handleClose} handleShow={handleShow}/>)}
-              </div>
-              </div>
-              </div>
+  return (
+    <div>
+      {/* <Rotate/> */}
+          { /*<BackgroundImage /> */}
+      <div className="roadContainer">
+        <div ref={scrollRef} className="road" onWheel={onWheel}>
+          <Doodle id="moving_doodle" move={position} />
+
+          <a
+            href="https://source.unsplash.com/1600x900/?graduation"
+            data-lightbox="image-1"
+            data-title="My caption"
+          >
+            IMAGE
+          </a>
+
+          <img src="https://source.unsplash.com/1600x900/?graduation"/>
+
+          {milestones.map((milestone, index) => (
+            <Milestone
+              left={1250 * (index + 1)}
+              milestone={milestone.milestoneText}
+              showModal={modalShown}
+              handleClose={handleClose}
+              handleShow={handleShow}
+              //   imagePath={milestone.imagePath}
+              modalText={milestone.modalText}
+              modalTitle={milestone.modalTitle}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 

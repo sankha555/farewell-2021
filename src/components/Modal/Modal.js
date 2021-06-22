@@ -7,26 +7,26 @@ import './Modal.css'
 function CustomModal(props) {
 
 
-
+// console.log(props.modalTitle)
   return (
     <>
-      <Button variant="primary" id="openButton" onClick={props.handleShow} >{props.text}</Button>
+      <Button variant="primary" id="openButton" onClick={props.handleShow}>{props.text}</Button>
       <Modal show={props.showModal} onHide={props.handleClose}>
         
         <Modal.Header id="header" closeButton>
-                <Modal.Title id="title">Where is the good in goodbye</Modal.Title>
+                <Modal.Title id="title"><>{props.modalTitle}</></Modal.Title>
         </Modal.Header>
                 
                 <Modal.Body id='back'>
                   <>
                     <div id="text">
-                    As we say goodbye, you shall be waving hello to new opportunities in your upcoming life, and we wish you all the best for that
+              {props.modalText}
                     </div>
                     
-                    <div id="image">
-                      <img src="https://source.unsplash.com/1600x900/?graduation" id="add"></img>
+                    {/* <div id="image">
+                      <img src={props.imagePath} id="add"></img>
                      
-                    </div>
+                    </div> */}
                   </>
                 </Modal.Body>
         
