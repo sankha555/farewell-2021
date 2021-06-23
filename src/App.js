@@ -12,10 +12,12 @@ import VishnupriyaRoad from './components/Seniors/Vishnupriya/VishnupriyaRoad'
 import SparshRoad from './components/Seniors/Sparsh/SparshRoad'
 import Landing from './components/LandingPage/Landing';
 import "./App.css";
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 function App() {
   return (
     <BrowserRouter basename={window.location.pathname || ''}>
+      <SimpleReactLightbox>
     <div className="App">
       {/* <Layout /> */}               
      <Switch>                  
@@ -32,7 +34,8 @@ function App() {
       </Switch>
       
 
-    </div>
+        </div>
+        </SimpleReactLightbox>
     </BrowserRouter>
     
   );

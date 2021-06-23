@@ -6,6 +6,7 @@ import CustomModal from '../../Modal/Modal';
 import Landing from '../../LandingPage/Landing';
 import Rotate from '../../Rotate/Rotate'
 import BackgroundImage from '../../BackgroundImage/BackgroundImage'
+import Image from '../../Images/Images'
 
 
 function VishnupriyaRoad() {
@@ -102,35 +103,85 @@ function VishnupriyaRoad() {
   const scrollRef = useRef(null);
 
   const milestones = [
-    {
-      milestoneText: "First Year",
-      imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "HEY",
-    },
-    {
-      milestoneText: "Second Year",
-      imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "HEY",
-    },
-    {
-      milestoneText: "Third Year",
-      imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "HEY",
-    },
-    {
-      milestoneText: "Fourth Year",
-      imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "HEY",
-    },
+      {
+        milestoneText: "First Year",
+        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+        modalText: "Story title",
+        modalTitle: "Story",
+      },
+      {
+        milestoneText: "Second Year",
+        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+        modalText: "Story title",
+        modalTitle: "Story",
+      },
+      {
+        milestoneText: "Third Year",
+        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+        modalText: "Story title",
+        modalTitle: "Story",
+      },
+      {
+        milestoneText: "Fourth Year",
+        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+        modalText: "Story title",
+        modalTitle: "Story",
+      },
   ];
+  
+  const imagesInfo = [
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"500px",
+      width:"500px",
+      bottom:"20%"
+    },
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"1400px",
+      width:"500px",
+      bottom:"20%"
+    },
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"2300px",
+      width:"500px",
+      bottom:"20%"
+    },
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"3200px",
+      width:"500px",
+      bottom:"20%"
+    },
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"4100px",
+      width:"500px",
+      bottom:"20%"
+    },
+  ]
+
 
   return (
     <div>
       {/* <Rotate/> */}
-      <BackgroundImage />
+      
       <div className="roadContainer">
         <div ref={scrollRef} className="road" onWheel={onWheel}>
           <Doodle id="moving_doodle" move={position} />
+
+       
+          {
+            imagesInfo.map((imageinfo =>
+              <Image
+                src={imageinfo.src}
+                left={imageinfo.left}
+                width={imageinfo.width}
+                bottom={imageinfo.bottom}
+              />))
+          }
+        
 
           {milestones.map((milestone, index) => (
             <Milestone
@@ -139,8 +190,9 @@ function VishnupriyaRoad() {
               showModal={modalShown}
               handleClose={handleClose}
               handleShow={handleShow}
-              imagePath={milestone.imagePath}
+              //   imagePath={milestone.imagePath}
               modalText={milestone.modalText}
+              modalTitle={milestone.modalTitle}
             />
           ))}
         </div>

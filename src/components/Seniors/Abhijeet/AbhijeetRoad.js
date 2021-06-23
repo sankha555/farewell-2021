@@ -6,8 +6,7 @@ import CustomModal from '../../Modal/Modal';
 import Landing from '../../LandingPage/Landing';
 import Rotate from '../../Rotate/Rotate'
 import BackgroundImage from '../../BackgroundImage/BackgroundImage'
-import lightboxcss from '../../../../node_modules/lightbox2/src/css/lightbox.css'
-import lightboxjs from '../../../../node_modules/lightbox2/src/js/lightbox.js'
+import Image from "../../Images/Images";
 
 
 function AbhijeetRoad() {
@@ -108,47 +107,82 @@ function AbhijeetRoad() {
       {
         milestoneText: "First Year",
         // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-        modalText: "HEY",
-        modalTitle: "HEllo",
+        modalText: "Story title",
+        modalTitle: "Story",
       },
       {
         milestoneText: "Second Year",
         // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-        modalText: "HEY",
-        modalTitle: "HEllo",
+        modalText: "Story title",
+        modalTitle: "Story",
       },
       {
         milestoneText: "Third Year",
         // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-        modalText: "HEY",
-        modalTitle: "HEllo",
+        modalText: "Story title",
+        modalTitle: "Story",
       },
       {
         milestoneText: "Fourth Year",
         // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-        modalText: "HEY",
-        modalTitle: "HEllo",
+        modalText: "Story title",
+        modalTitle: "Story",
       },
-    ];
+  ];
+  
+  const imagesInfo = [
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"500px",
+      width:"500px",
+      bottom:"20%"
+    },
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"1400px",
+      width:"500px",
+      bottom:"20%"
+    },
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"2300px",
+      width:"500px",
+      bottom:"20%"
+    },
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"3200px",
+      width:"500px",
+      bottom:"20%"
+    },
+    {
+      src:"https://source.unsplash.com/1600x900/?graduation",
+      left:"4100px",
+      width:"500px",
+      bottom:"20%"
+    },
+  ]
 
 
   return (
     <div>
       {/* <Rotate/> */}
-          { /*<BackgroundImage /> */}
+      
       <div className="roadContainer">
         <div ref={scrollRef} className="road" onWheel={onWheel}>
           <Doodle id="moving_doodle" move={position} />
 
-          <a
-            href="https://source.unsplash.com/1600x900/?graduation"
-            data-lightbox="image-1"
-            data-title="My caption"
-          >
-            IMAGE
-          </a>
-
-          <img src="https://source.unsplash.com/1600x900/?graduation"/>
+       
+          {
+            imagesInfo.map((imageinfo =>
+              <Image
+                src={imageinfo.src}
+                left={imageinfo.left}
+                width={imageinfo.width}
+                bottom={imageinfo.bottom}
+              />))
+          }
+        
 
           {milestones.map((milestone, index) => (
             <Milestone

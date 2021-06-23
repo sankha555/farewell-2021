@@ -10,7 +10,7 @@ function CustomModal(props) {
 // console.log(props.modalTitle)
   return (
     <>
-      <Button variant="primary" id="openButton" onClick={props.handleShow}>{props.text}</Button>
+      <div id="openButton" onClick={props.handleShow} className="mileButton"><div>{props.text}</div></div>
       <Modal show={props.showModal} onHide={props.handleClose}>
         
         <Modal.Header id="header" closeButton>

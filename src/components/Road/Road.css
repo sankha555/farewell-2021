@@ -1,6 +1,7 @@
 .roadContainer {
   position: absolute;
-  mix-blend-mode: lighten;
+  background: url('../../assets/about1.jpg');
+  background-size: 100vw 100vh;
   bottom: 0;
   width: 100%;
 }
@@ -9,7 +10,6 @@
   height: 200vh;
   width: 100%;
   overflow-x: scroll;
-  background-color: black;
   position: relative;
   overflow: hidden;
 }
@@ -17,4 +17,13 @@
 .road p {
   white-space: nowrap;
   display: inline;
+}
+
+.imgRoad{
+  position: absolute;
+  bottom: 15%;
+  width: 600px;
+  left: 500px;
+  border-radius: 10px;
+  overflow: hidden;
 }
