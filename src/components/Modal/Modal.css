@@ -1,6 +1,7 @@
 #title {
   font-size: 1.5em;
   font-weight: 900;
+  color: red;
 }
 
 #text {
@@ -53,6 +54,19 @@
   font-weight: 900;
 }
 
-#openButton {
-  mix-blend-mode: darken !important;
+.mileButton{
+  width: 100%;
+  color: white;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
 }
+
+

@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.0",
     "framer-motion": "^4.1.17",
+    "jquery": "^3.6.0",
     "particles.js": "^2.0.0",
     "react": "^17.0.2",
     "react-animated-css": "^1.2.1",
@@ -24,6 +25,7 @@
     "react-scripts": "^4.0.3",
     "react-swipeable": "^6.1.2",
     "react-tsparticles": "^1.27.0",
+    "simple-react-lightbox": "^3.6.6",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

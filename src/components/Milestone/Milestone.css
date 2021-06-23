@@ -1,6 +1,7 @@
 .milestone_container {
   height: 100px;
   width: 100px;
+  overflow: hidden;
   border-radius: 25px 25px 0 0;
   background-color: yellow;
   display: inline-block;
