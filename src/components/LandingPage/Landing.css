@@ -93,7 +93,7 @@ h4 {
   font-weight: 100 !important;
   font-family: "Montserrat", "Open Sans", sans-serif;
   letter-spacing: 2px;
-  font-size: 2rem;
+  font-size: 1.6rem !important;
   background: linear-gradient(to right, #a30d0d 50%, white 50%);
   color: transparent;
   background-clip: text;
@@ -128,5 +128,3 @@ h4 {
   font-weight: 900;
   justify-content: center;
 }
-
-
