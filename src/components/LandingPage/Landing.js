@@ -4,15 +4,6 @@ import TextHover from "./TextHover";
 import { NavLink } from "react-router-dom";
 import Code from "./assets/Code.jpg";
 import { Dimensions } from "react-native";
-// import Ayush from './assets/Ayush.jpg';
-// import Sparsh from './assets/Sparsh.jpg';
-// import Abhijeet from './assets/Abhijeet.jpg';
-// import Atmadeep from './assets/Atmadeep.jpg';
-// import Yash from './assets/Yash.jpg';
-// import Rahil from './assets/Rahil.jpg';
-// import Vishnupriya from './assets/Vishnupriya.jpg'
-// import Nikhil from './assets/Nikhil.jpg';
-// import Nirav from './assets/Nirav.jpg';
 
 import { Animated } from "react-animated-css";
 
@@ -27,37 +18,17 @@ class Landing extends Component {
   state = {
     hovering: 0,
     background: null,
-
-    // loader: 1,
-    // logoCollapser: {},
   };
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //   	this.setState({
-  //   		logoCollapser: {
-  //   			borderRadius: '100%',
-  //   			marginLeft: '10px',
-  //   			marginTop: '30px',
-  //   			width: '0',
-  //   			height: '0',
-  //   			color: 'transparent',
-  //   		},
-  //   	});
-  //   }, 3000);
-  //   setTimeout((s) => {
-  //   	this.setState({ loader: 0 });
-  //   }, 4200);
-  // }
+
   componentDidMount() {
-    // let heightElem = document.querySelector(".Header1").offsetHeight * 9;
+   
     let heightElem =
       document.querySelector(".MainContainer").offsetHeight +
       document.querySelector(".Headline").offsetHeight;
     console.log(heightElem);
     this.setState({ height: heightElem });
     console.log(this.state.height);
-    // document.querySelector(".BlueSlider").style.height =
-    //   this.state.height + "px";
+  
   }
   mouseEntered = (event) => {
     this.setState({ hovering: 1, background: event.target.id });
@@ -95,37 +66,19 @@ class Landing extends Component {
 
       footer = { transform: "translateY(-3.5vw)" };
     }
-    let Screen = (
+   
+   let Screen = (
       <div className="Landing">
-        {/* <div className='Loader' style={{ ...this.state.logoCollapser }}>
-					<Animated animationIn='slideInUp' isVisible={true}>
-						<div>
-							<h3>Hey, this is Pranay and you are watching my portfolio!</h3>
-						</div>
-					</Animated>
-				</div> */}
-      </div>
-    );
-
-    Screen = (
-      <div className="Landing">
-        <nav className="">
-          {/* <div className='Logo'>
-							<div className='red'>B</div>
-						</div> */}
+        <nav>
+         
           <span className="Projects">
             <h4>
-              Farewell{" "}
+              Farewell
               <span className="Headline" style={headLine}>
-                Farewell{" "}
+                Farewell
               </span>
             </h4>
           </span>
-          {/* <div className='Menu'>
-							<p>
-								More <span>//</span>
-							</p>
-						</div> */}
         </nav>
         <div className="Background1" style={backGround}></div>
         <div
@@ -134,7 +87,6 @@ class Landing extends Component {
         ></div>
 
         <div className="MainContainer">
-          {" "}
           <NavLink to="/Abhijeet">
             <TextHover
               id={Code}
