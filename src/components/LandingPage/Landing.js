@@ -147,7 +147,7 @@ class Landing extends Component {
           <NavLink to="/Ayush">
             <TextHover
               id={Code}
-              text="Ayush"
+              text="Ayush‎‎"
               MouseEntered={this.mouseEntered}
               MouseLeft={this.mouseLeft}
               hoverActive={this.state.hovering}
@@ -211,6 +211,24 @@ class Landing extends Component {
             <TextHover
               id={Code}
               text="Nirav"
+              MouseEntered={this.mouseEntered}
+              MouseLeft={this.mouseLeft}
+              hoverActive={this.state.hovering}
+            />
+          </NavLink>
+          <NavLink to="/Yashdeep">
+            <TextHover
+              id={Code}
+              text="Yashdeep"
+              MouseEntered={this.mouseEntered}
+              MouseLeft={this.mouseLeft}
+              hoverActive={this.state.hovering}
+            />
+          </NavLink>
+          <NavLink to="/Happy">
+            <TextHover
+              id={Code}
+              text="Harpinder"
               MouseEntered={this.mouseEntered}
               MouseLeft={this.mouseLeft}
               hoverActive={this.state.hovering}

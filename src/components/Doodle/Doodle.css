@@ -1,13 +1,11 @@
 .doodle{
     content: '';
-    width: 100px; 
-    height: 100px; 
-    border-top: 20px solid transparent; 
-    border-left:20px solid rgb(255, 81, 0); 
+    width: 150px;  
     display: inline-block;
     bottom: 0px;
     left: 15px;
     position: absolute;
     z-index: 1;
     transition-timing-function: linear;
+
 }

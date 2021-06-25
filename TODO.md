@@ -1,6 +1,5 @@
 - [ ] Remove slider, add background
-- [ ] Fix text cutting off in slider
+- [ ] Fix text cutting off in slider/change font
 - [ ] Heading
-- [ ] Fix Modal scrolls with Road (Or stop moving road simultaneously)
-- [ ] Slow speed
-- [x] Fix Landing page loading below on rotate screen page
+- [ ] Add doodle images and story
+- [ ] Add 5th image for Yashdeep bhaiya and 4 more images for Ayush bhaiya, 5 for Happy bhaiya
