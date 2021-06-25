@@ -3,6 +3,7 @@ import { Image, Container, Row, Col } from "react-bootstrap";
 import "./Images.css";
 import { SRLWrapper } from "simple-react-lightbox";
 
+
 const Images = (props) => {
   const options = {
     buttons: {
@@ -23,10 +24,13 @@ const Images = (props) => {
     }
   }
   return (
-    <div className="roadImgDiv" style={{ left: props.left, width: props.width, bottom: props.bottom }} >
-      <SRLWrapper options={options} elements={[{caption:"HELLO"}]}>
-        <img src={props.src} />
-      </SRLWrapper>
+    <div>
+      <div className="roadImgDiv" style={{ left: props.left, width: props.width, bottom: props.bottom }} >
+        <SRLWrapper options={options} elements={[{ caption: "HELLO" }]}>
+          <img src={props.src} style={{ border: "5px solid rgb(105, 103, 103)" }} />
+        </SRLWrapper>
+        <div className="roadImgStand"></div>
+      </div>
     </div>
   );
 };

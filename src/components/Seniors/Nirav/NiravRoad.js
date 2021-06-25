@@ -10,6 +10,7 @@ import Image from '../../Images/Images'
 
 function NiravRoad() {
   const [position, setPosition] = useState(0);
+  const [modalIndex, setModalIndex] = useState(0);
 
   const [modalShown, setModalShown] = useState(false);
 
@@ -102,62 +103,69 @@ function NiravRoad() {
   const scrollRef = useRef(null);
 
   const milestones = [
-      {
-        milestoneText: "First Year",
-        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-        modalText: "Story title",
-        modalTitle: "Story",
-      },
-      {
-        milestoneText: "Second Year",
-        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-        modalText: "Story title",
-        modalTitle: "Story",
-      },
-      {
-        milestoneText: "Third Year",
-        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-        modalText: "Story title",
-        modalTitle: "Story",
-      },
-      {
-        milestoneText: "Fourth Year",
-        // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-        modalText: "Story title",
-        modalTitle: "Story",
-      },
+    {
+      milestoneText: "First Year",
+      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "Story title",
+      modalTitle: "Story",
+      index: 0
+
+    },
+    {
+      milestoneText: "Second Year",
+      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "Story title",
+      modalTitle: "Story",
+      index: 1
+
+    },
+    {
+      milestoneText: "Third Year",
+      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "Story title",
+      modalTitle: "Story",
+      index: 2
+
+    },
+    {
+      milestoneText: "Fourth Year",
+      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "Story title",
+      modalTitle: "Story",
+      index: 3
+
+    },
   ];
-  
   const imagesInfo = [
     {
-      src:"https://source.unsplash.com/1600x900/?graduation",
-      left:"500px",
-      width:"500px",
-      bottom:"20%"
+      src: "https://i.ibb.co/42tT8yB/3.jpg",
+      left: "500px",
+      width: "500px",
+      bottom: "0%"
     },
     {
-      src:"https://source.unsplash.com/1600x900/?graduation",
-      left:"1400px",
-      width:"500px",
-      bottom:"20%"
+      src: "https://i.ibb.co/0G4N1Kn/4.jpg",
+      left: "1400px",
+      width: "500px",
+      bottom: "0%"
     },
     {
-      src:"https://source.unsplash.com/1600x900/?graduation",
-      left:"2300px",
-      width:"500px",
-      bottom:"20%"
+      src: "https://i.ibb.co/dPhbk72/5.jpg",
+      left: "2300px",
+      width: "300px",
+      bottom: "0%"
     },
     {
-      src:"https://source.unsplash.com/1600x900/?graduation",
-      left:"3200px",
-      width:"500px",
-      bottom:"20%"
+      src: "https://i.ibb.co/njJ5QG2/1.jpg",
+      left: "3200px",
+      width: "500px",
+      bottom: "0%"
     },
     {
-      src:"https://source.unsplash.com/1600x900/?graduation",
-      left:"4100px",
-      width:"500px",
-      bottom:"20%"
+      src: "https://i.ibb.co/j59mYC6/2.jpg",
+      left: "4100px",
+      width: "500px",
+      bottom: "0%"
     },
   ]
 
@@ -165,12 +173,12 @@ function NiravRoad() {
   return (
     <div>
       {/* <Rotate/> */}
-      
+
       <div className="roadContainer">
         <div ref={scrollRef} className="road" onWheel={onWheel}>
-          <Doodle id="moving_doodle" move={position} />
+          <Doodle id="moving_doodle" move={position} doodleImg="https://i.ibb.co/jrgqwhj/Pics-Art-06-25-07-44-06.png" />
 
-       
+
           {
             imagesInfo.map((imageinfo =>
               <Image
@@ -180,7 +188,7 @@ function NiravRoad() {
                 bottom={imageinfo.bottom}
               />))
           }
-        
+
 
           {milestones.map((milestone, index) => (
             <Milestone
@@ -188,10 +196,15 @@ function NiravRoad() {
               milestone={milestone.milestoneText}
               showModal={modalShown}
               handleClose={handleClose}
-              handleShow={handleShow}
+              handleShow={() => {
+                setModalShown(true);
+                setModalIndex(index);
+              }}
               //   imagePath={milestone.imagePath}
               modalText={milestone.modalText}
               modalTitle={milestone.modalTitle}
+              index={modalIndex}
+              selfIndex={milestone.index}
             />
           ))}
         </div>
