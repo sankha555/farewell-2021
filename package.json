@@ -2,7 +2,6 @@
   "name": "farewell-2021",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sankha555.github.io/farewell-2021/",
   "dependencies": {
     "@chakra-ui/react": "^1.6.3",
     "@emotion/react": "^11.4.0",
