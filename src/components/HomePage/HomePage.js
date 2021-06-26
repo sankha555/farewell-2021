@@ -26,13 +26,16 @@ class HomePage extends Component {
         <div className = "bg-component">
           <img src={bg1} style={{ height: "100%", width: "100%" }} ></img>
         </div> 
-        <div className="overlay">
+        <div className="overlaySide">
+          <div className="overlay">
           <h1>FAREWELL</h1>
           <h2>Batch of 2017!</h2>
 
           <p className="innerText">Thank you for the beautiful memories and the countless lessons Seniors. <br/>You'll be missed!</p>
         
-         <NavLink to='/Farewell-2021'><button className="btn btn-success mt-5">NEXT</button></NavLink> 
+         <NavLink to='/Farewell-2021'><button className="btn btn-success mt-5"  style={{background:"#08bedf", outline:"0"}}>NEXT</button></NavLink> 
+        </div>
+          
         </div>
       </div>
     );

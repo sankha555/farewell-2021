@@ -154,7 +154,7 @@ function VishnupriyaRoad() {
     {
       src: "https://i.ibb.co/8srw3V1/4.jpg",
       left: "2300px",
-      width: "300px",
+      width: "250px",
       bottom: "0%"
     },
     {

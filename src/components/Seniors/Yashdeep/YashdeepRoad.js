@@ -141,24 +141,24 @@ function YashdeepRoad() {
         {
             src: "https://i.ibb.co/n6vF5bP/3.jpg",
             left: "500px",
-            width: "500px",
-            bottom: "0%"
-        },
-        {
-            src: "https://i.ibb.co/CQVRH63/4.jpg",
-            left: "1400px",
             width: "300px",
             bottom: "0%"
         },
         {
+            src: "https://i.ibb.co/CQVRH63/4.jpg",
+            left: "1700px",
+            width: "250px",
+            bottom: "0%"
+        },
+        {
             src: "https://i.ibb.co/vHKpkVt/1.jpg",
-            left: "2300px",
-            width: "500px",
+            left: "3000px",
+            width: "300px",
             bottom: "0%"
         },
         {
             src: "https://i.ibb.co/ZVDV2Rd/2.jpg",
-            left: "3200px",
+            left: "4500px",
             width: "300px",
             bottom: "0%"
         },
