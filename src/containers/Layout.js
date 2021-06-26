@@ -9,7 +9,7 @@ import './Layout.css';
 import Landing from '../components/LandingPage/Landing'
 import img1 from '../assets/about1.jpg'
 import Code from '../components/LandingPage/assets/Code.jpg'
-
+import homeimg from '../assets/IMG_3902.heic'
 
 const cacheImages = async (srcArray) => {
     const promises = await srcArray.map((src) => {
@@ -29,6 +29,7 @@ const Layout = ({ tag }) => {
 
     useEffect(() => {
         const imgs = [
+            homeimg,
             img1,
             Code,
             "https://i.ibb.co/BfbhX2g/Vishnupriya.png",
