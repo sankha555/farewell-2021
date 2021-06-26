@@ -104,10 +104,10 @@ function AyushRoad() {
 
   const milestones = [
     {
-      milestoneText: "Formal Intro",
+      milestoneText: "First Impressions",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "init",
-      modalTitle: "Story",
+      modalText: "Jab unse pehli baar mila tha toh intro mei roughly kuchh aisa bola tha " + "Coding krta hu aur CG laata hu.",
+      modalTitle: "Logo ke saath mulakate",
       index: 1
       
     },
@@ -120,18 +120,18 @@ function AyushRoad() {
 
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "TCisco",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Intern tha inka Cisco mei but company mei feel nhi aaya toh 27 lpa ka PPO thukra diya. Reasons to sunno: they're in losses, have mass layoffs and are reducing pay, I had rejected their ppo",
+      modalTitle: "27 LPA pani me",
       index: 2
 
     },
     {
-      milestoneText: "Fourth Year",
+      milestoneText: "Oracle",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Oracle mei finally settled with 40 lpa...",
+      modalTitle: "Paise hi paise abto",
       index: 3
 
     },

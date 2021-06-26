@@ -104,34 +104,34 @@ function YashdeepRoad() {
 
     const milestones = [
         {
-            milestoneText: "First Year",
+            milestoneText: "Foodie",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ",
-            modalTitle: "Story",
+            modalText: "khaane ka bohot craze hai unko",
+            modalTitle: "Life goal, uska paisa kamane ka main aim hai ki unko zyada khaane ko milega",
             index: 0
 
         },
         {
-            milestoneText: "Second Year",
+            milestoneText: "Sprinkler Intern",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Story title",
-            modalTitle: "Story",
+            modalText: "Sprinkler me intern intern phodne ke baad ppo to wasoolna hi thha",
+            modalTitle: "Obvious cheeze",
+            index: 2
+            
+        },
+        {
+            milestoneText: "Guruji",
+            // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+            modalText: "sabki placement aur intern aapke Competitive ke sessions ke vajah se hi lagi hai Guruji",
+            modalTitle: "Competitive Guru",
             index: 1
 
         },
         {
-            milestoneText: "Third Year",
+            milestoneText: "Gurudakshina",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Story title",
-            modalTitle: "Story",
-            index: 2
-
-        },
-        {
-            milestoneText: "Fourth Year",
-            // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Story title",
-            modalTitle: "Story",
+            modalText: "Sabka placement to lagva diya, Ab Gurudkshina me kya luu? Yes chaloo badii dawaat jaha bohot khana he. inka ek junior hai jisne puri planning karli hai inke graduate hone ke baad placement treat lene ki aur sirf corona ki vzah se usmei delay aa rha hai",
+            modalTitle: "Fuml Khana",
             index: 3
 
         },
