@@ -131,35 +131,35 @@ function HappyRoad() {
 
     const imagesInfo = [
         {
-            src: "https://i.ibb.co/cY3tQ7K/1-1.jpg",
+            src: "https://i.ibb.co/nbngZ5x/he.jpg",
             left: "500px",
             width: "300px",
             bottom: "0%"
         },
         {
-            src: "https://source.unsplash.com/1600x900/?graduation",
+            src: "https://i.ibb.co/1JhJ7F7/1.jpg",
             left: "1400px",
             width: "300px",
             bottom: "0%"
         },
         {
-            src: "https://source.unsplash.com/1600x900/?graduation",
+            src: "https://i.ibb.co/pXDptd8/2.jpg",
             left: "2300px",
             width: "300px",
             bottom: "0%"
         },
         {
-            src: "https://source.unsplash.com/1600x900/?graduation",
+            src: "https://i.ibb.co/2tgJg7K/12345.jpg",
             left: "3200px",
             width: "300px",
             bottom: "0%"
         },
-        {
-            src: "https://source.unsplash.com/1600x900/?graduation",
-            left: "4100px",
-            width: "300px",
-            bottom: "0%"
-        },
+        // {
+        //     src: "https://source.unsplash.com/1600x900/?graduation",
+        //     left: "4100px",
+        //     width: "300px",
+        //     bottom: "0%"
+        // },
     ]
 
 
