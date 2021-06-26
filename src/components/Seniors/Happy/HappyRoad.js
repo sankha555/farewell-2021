@@ -112,11 +112,19 @@ function HappyRoad() {
 
         },
         {
+            milestoneText: "Highschool Crush?",
+            // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+            modalText: "Who's your highschool crush jiske baare me bohoto ko doubt hai???",
+            modalTitle: "Highschool Crush?",
+            index: 1
+
+        },
+        {
             milestoneText: "Coord",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
             modalText: "Apogee coord, glitch repository ko fix karne ka chance virus kha gya ;-;",
             modalTitle: "Coord",
-            index: 1
+            index: 2
 
         },
     ];
@@ -135,23 +143,23 @@ function HappyRoad() {
             bottom: "0%"
         },
         {
-            src: "https://i.ibb.co/pXDptd8/2.jpg",
+            src: "https://i.ibb.co/ZYpFYGd/Happy-new-2.jpg",
             left: "2300px",
             width: "375px",
             bottom: "0%"
         },
         {
-            src: "https://i.ibb.co/2tgJg7K/12345.jpg",
+            src: "https://i.ibb.co/pXDptd8/2.jpg",
             left: "3200px",
             width: "375px",
             bottom: "0%"
         },
-        // {
-        //     src: "https://source.unsplash.com/1600x900/?graduation",
-        //     left: "4100px",
-        //     width: "300px",
-        //     bottom: "0%"
-        // },
+        {
+            src: "https://i.ibb.co/2tgJg7K/12345.jpg",
+            left: "4100px",
+            width: "300px",
+            bottom: "0%"
+        }
     ]
 
 
