@@ -103,35 +103,27 @@ function NikhilRoad() {
   const scrollRef = useRef(null);
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "GSoC",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "GSoC 2019 at Open Bioinformatics Foundation. Fir uske baad Mentor summit me bhi gye!",
+      modalTitle: "GSoC Phoda!",
       index: 0
 
     },
     {
-      milestoneText: "Second Year",
+      milestoneText: "Sec Sahab",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Coding Club Secretary 2019-20. Andhe events krvaye bhaiyya ne!",
+      modalTitle: "CC Secretary",
       index: 1
 
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Barclays",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Barclays me placed, life set!",
+      modalTitle: "Barclays",
       index: 2
-
-    },
-    {
-      milestoneText: "Fourth Year",
-      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
-      index: 3
 
     },
   ];

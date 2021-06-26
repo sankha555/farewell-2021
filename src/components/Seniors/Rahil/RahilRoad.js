@@ -103,34 +103,34 @@ function RahilRoad() {
   const scrollRef = useRef(null);
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "Strengths",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Academic wise strong, street wise dumb",
+      modalTitle: "Strengths",
       index: 0
 
     },
     {
-      milestoneText: "Second Year",
+      milestoneText: "The Extrovert",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Naye logon se dosthi nahi kari toh pagal ho jaata hai. Gets horny at the thought of meeting new people",
+      modalTitle: "Insaan kaha hai?",
       index: 1
 
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Tubelight",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Tubelight hai yeh. Tubelight takes 1-2 seconds to light up, sometimes even longer.",
+      modalTitle: "Tubelight",
       index: 2
 
     },
     {
-      milestoneText: "Fourth Year",
+      milestoneText: "Sedguru",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Randomly raat ke 2-4 baje gyaan chhod ta hai",
+      modalTitle: "Ab mai gyaan chodega",
       index: 3
 
     },
