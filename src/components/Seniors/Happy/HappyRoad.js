@@ -116,7 +116,7 @@ function HappyRoad() {
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
             modalText: "Apogee coord, glitch repository ko fix karne ka chance virus kha gya ;-;",
             modalTitle: "Coord",
-            index: 2
+            index: 1
 
         },
     ];

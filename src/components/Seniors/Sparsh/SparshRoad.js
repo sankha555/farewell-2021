@@ -120,19 +120,11 @@ function SparshRoad() {
 
     },
     {
-      milestoneText: "Simpwars",
-      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
-      index: 2
-
-    },
-    {
       milestoneText: "Konfidens",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
       modalText: "Jo Bhi ho bande me confidence bhot hai or sab ata hai isko! Kahi bhi mujra karwa lo ~ Dosto ki Zubaani",
       modalTitle: "Konfidens",
-      index: 3
+      index: 2
 
     },
   ];

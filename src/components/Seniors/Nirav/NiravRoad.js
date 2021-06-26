@@ -120,19 +120,11 @@ function NiravRoad() {
 
     },
     {
-      milestoneText: "Intern",
-      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Intern",
-      index: 2
-
-    },
-    {
       milestoneText: "Fourth Year",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
       modalText: "I hope your last few days at Campus would be as memorable as your college life!",
       modalTitle: "Fourth Year",
-      index: 3
+      index: 2
 
     },
   ];
