@@ -106,8 +106,8 @@ function YashdeepRoad() {
         {
             milestoneText: "Foodie",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "khaane ka bohot craze hai unko",
-            modalTitle: "Life goal, uska paisa kamane ka main aim hai ki unko zyada khaane ko milega",
+            modalText: "Life goal, uska paisa kamane ka main aim hai ki unko zyada khaane ko milega",
+            modalTitle: "Khaane ka bohot shauk hai usko",
             index: 0
 
         },
