@@ -75,7 +75,7 @@ class Landing extends Component {
             <h4 style={this.state.hovering ? {color: "#a30d0d"} : null}>
               Batch Of 2017
               <span className="Headline" style={headLine}>
-              Batch Of 2017
+              
               </span>
             </h4>
           </span>
