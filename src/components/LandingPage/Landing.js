@@ -71,11 +71,11 @@ class Landing extends Component {
       <div className="Landing">
         <nav>
          
-          <span className="Projects">
+          <span className="Projects"  >
             <h4 style={this.state.hovering ? {color: "white"} : null}>
-              Farewell
+              Batch Of 2017
               <span className="Headline" style={headLine}>
-                Farewell
+              Batch Of 2017
               </span>
             </h4>
           </span>

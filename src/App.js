@@ -13,6 +13,7 @@ import SparshRoad from './components/Seniors/Sparsh/SparshRoad'
 import YashdeepRoad from './components/Seniors/Yashdeep/YashdeepRoad'
 import HappyRoad from './components/Seniors/Happy/HappyRoad'
 import Landing from './components/LandingPage/Landing';
+import HomePage from './components/HomePage/HomePage';
 import "./App.css";
 import SimpleReactLightbox from 'simple-react-lightbox'
 
@@ -36,7 +37,8 @@ function App() {
             <Route path='/Nikhil' component={() => <Layout tag={<NikhilRoad />} />} />
             <Route path='/Yash' component={() => <Layout tag={<YashRoad />} />} />
             <Route path='/Yashdeep' component={() => <Layout tag={<YashdeepRoad />} />} />
-            <Route path='/' exact component={() => <Layout tag={<Landing />} />} />
+            <Route path='/Farewell-2021' exact component={() => <Layout tag={<Landing />} />} />
+            <Route path='/' exact component={() => <Layout tag={<HomePage />} />} />
           </Switch>
 
         </div>

@@ -59,7 +59,8 @@
 
 .modalStoryText{
   display: flex;
+  font: 600;
   justify-content: center;
   align-items: center;
-  color: rgb(180, 70, 70);
+  color: white
 }

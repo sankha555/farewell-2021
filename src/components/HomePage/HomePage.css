@@ -1,0 +1,50 @@
+.homePage {
+  position: absolute;
+  background: aliceblue; 
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  width: 100%;
+  height: 100%;
+ 
+  /*background-image: url("");*/
+} 
+
+.overlay {
+  position: relative;
+  width: 80%;
+  height: 70%;
+  background: rgba(255,255,0,0.5);
+  z-index: 100;
+  color: black;
+
+  font-size: xx-large;
+  font-family: "Kaushan Script", "Open Sans", sans-serif !important;
+
+  padding-top: 6%;
+}
+
+.bg-component {
+  /* position: absolute; */
+  height: 100vh;
+  z-index: 10;
+}
+
+.yellowCard {
+  width: 70vw;
+  height: 40vh;
+  position: relative; 
+  background: rgba(255,255,0,0.5);
+}
+
+.innerText {
+  color: maroon;
+  font-size: x-large;
+  margin-top: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}

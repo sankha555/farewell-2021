@@ -63,7 +63,7 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-git ;
+  justify-content: space-around;
   align-items: center;
   top: 0;
   z-index: 8;
@@ -71,7 +71,7 @@ body {
 }
 nav {
   margin: auto;
-  box-sizing: b-box;
+  box-sizing: border-box;
   /* margin: 5px 10px; */
   width: 100%;
   display: flex;
@@ -90,8 +90,11 @@ nav {
 }
 
 h4 {
+
+
+  margin-top: 20px !important;
   text-transform: uppercase;
-  font-weight: 100 !important;
+  font-weight: 500 !important;
   font-family: "Montserrat", "Open Sans", sans-serif;
   letter-spacing: 2px;
   font-size: 1.6rem !important;
@@ -101,11 +104,13 @@ h4 {
 }
 
 .Headline {
+  margin-top: 20px !important;
+
   text-transform: uppercase;
   font-family: "Montserrat", "Open Sans", sans-serif;
   letter-spacing: 2px;
   font-size: 1.6rem !important;
-  font-weight: 100 !important;
+  font-weight: 500 !important;
   position: absolute;
   direction: rtl;
   right: 0;
