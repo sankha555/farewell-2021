@@ -88,6 +88,7 @@ nav {
   position: relative;
   /* overflow: hidden; */
 }
+
 h4 {
   text-transform: uppercase;
   font-weight: 100 !important;
@@ -97,7 +98,7 @@ h4 {
   background: linear-gradient(to right, #a30d0d 50%, white 50%);
   color: transparent;
   background-clip: text;
-
+}
 
 .Headline {
   text-transform: uppercase;
