@@ -152,7 +152,7 @@ function NiravRoad() {
     {
       src: "https://i.ibb.co/dPhbk72/5.jpg",
       left: "2300px",
-      width: "300px",
+      width: "260px",
       bottom: "0%"
     },
     {

@@ -11,7 +11,7 @@ function CustomModal(props) {
   return (
     <>
       <div id="openButton" onClick={props.handleShow} className="mileButton"><div>{props.text}</div></div>
-      <Modal show={props.showModal && props.selfIndex === props.index} onHide={props.handleClose}>
+      <Modal show={props.showModal && props.selfIndex === props.index} onHide={props.handleClose} centered>
 
         <Modal.Header id="header" closeButton>
           <Modal.Title id="title"><>{props.modalTitle}</></Modal.Title>
@@ -32,10 +32,6 @@ function CustomModal(props) {
           </>
         </Modal.Body>
 
-        <Modal.Footer id="footer">
-          {/* <Button variant="secondary" onClick={props.handleClose}>CLOSE</Button> */}
-          <Button id="button" variant="primary" onClick={props.handleClose}>CLOSE</Button>
-        </Modal.Footer>
       </Modal>
     </>
   );

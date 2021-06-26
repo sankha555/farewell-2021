@@ -1,10 +1,8 @@
 #title {
   font-size: 1.5em;
   font-weight: 900;
-  color: red;
+  color: #6ba15b;
 }
-
-
 
 #image {
   width: 40%;
@@ -18,15 +16,18 @@
   opacity: 0.4;
 }
 
+.modal-content{
+  background-color: #16161600;
+}
+
 #back {
-  background-color: #5cdb95;
-  background-image: url("bg.jpg");
+  background-color: #2e3837;
   background-size: 100vh;
 }
 
 #header {
-  background-color: #161616;
-  color: #a5232f;
+  background-color: #272e2d;
+  color: #6ba15b !important;
 }
 
 #footer {
@@ -41,7 +42,7 @@
   font-weight: 900;
 }
 
-.mileButton{
+.mileButton {
   width: 100%;
   color: white;
   background-color: black;
@@ -51,16 +52,13 @@
   justify-content: center;
   cursor: pointer;
   font-weight: 400;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-
-.modalStoryText{
+.modalStoryText {
   display: flex;
   font: 600;
   justify-content: center;
   align-items: center;
-  color: white
+  color: white;
 }
