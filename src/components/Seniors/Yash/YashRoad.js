@@ -141,31 +141,31 @@ function YashRoad() {
     {
       src: "https://i.ibb.co/r4ptFdr/2.jpg",
       left: "500px",
-      width: "500px",
+      width: "400px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/VH6Sy6R/3.jpg",
       left: "1400px",
-      width: "500px",
+      width: "400px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/WD9J3qg/4.jpg",
       left: "2300px",
-      width: "400px",
+      width: "370px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/q9Tqkm1/5.jpg",
       left: "3200px",
-      width: "500px",
+      width: "400px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/BCWBtS9/1.jpg",
       left: "4100px",
-      width: "500px",
+      width: "370px",
       bottom: "0%"
     },
   ]
@@ -177,8 +177,7 @@ function YashRoad() {
 
       <div className="roadContainer">
         <div ref={scrollRef} className="road" onWheel={onWheel}>
-          <Doodle id="moving_doodle" move={position} doodleImg="https://i.ibb.co/wM08hPy/New2-1.png" />
-
+          <Doodle id="moving_doodle" move={position} doodleImg="https://i.ibb.co/QkW4CsW/New2-1-1.png" />
 
           {
             imagesInfo.map((imageinfo =>

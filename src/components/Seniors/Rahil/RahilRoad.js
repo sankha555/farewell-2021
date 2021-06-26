@@ -140,31 +140,31 @@ function RahilRoad() {
     {
       src: "https://i.ibb.co/c20g2hw/2.jpg",
       left: "500px",
-      width: "500px",
+      width: "400px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/94fQqpB/3.jpg",
       left: "1400px",
-      width: "300px",
+      width: "250px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/pWNj0VP/4.jpg",
       left: "2300px",
-      width: "400px",
+      width: "350px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/2M7Bqcc/5.jpg",
       left: "3200px",
-      width: "500px",
+      width: "350px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/f9v1pCC/1.jpg",
       left: "4100px",
-      width: "500px",
+      width: "350px",
       bottom: "0%"
     },
   ]

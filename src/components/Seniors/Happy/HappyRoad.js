@@ -133,25 +133,25 @@ function HappyRoad() {
         {
             src: "https://i.ibb.co/nbngZ5x/he.jpg",
             left: "500px",
-            width: "300px",
+            width: "375px",
             bottom: "0%"
         },
         {
             src: "https://i.ibb.co/1JhJ7F7/1.jpg",
             left: "1400px",
-            width: "300px",
+            width: "375px",
             bottom: "0%"
         },
         {
             src: "https://i.ibb.co/pXDptd8/2.jpg",
             left: "2300px",
-            width: "300px",
+            width: "375px",
             bottom: "0%"
         },
         {
             src: "https://i.ibb.co/2tgJg7K/12345.jpg",
             left: "3200px",
-            width: "300px",
+            width: "375px",
             bottom: "0%"
         },
         // {

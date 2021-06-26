@@ -140,7 +140,7 @@ function SparshRoad() {
     {
       src: "https://i.ibb.co/3TpyPX5/123123.jpg",
       left: "500px",
-      width: "500px",
+      width: "400px",
       bottom: "0%"
     },
     {
@@ -164,7 +164,7 @@ function SparshRoad() {
     {
       src: "https://i.ibb.co/Y7fLhDM/1.jpg",
       left: "4100px",
-      width: "500px",
+      width: "400px",
       bottom: "0%"
     },
   ]

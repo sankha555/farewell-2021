@@ -137,19 +137,19 @@ function NikhilRoad() {
     {
       src: "https://i.ibb.co/dpbHvdL/3.jpg",
       left: "1400px",
-      width: "400px",
+      width: "300px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/YR2mPVX/4.jpg",
       left: "2300px",
-      width: "400px",
+      width: "300px",
       bottom: "0%"
     },
     {
       src: "https://i.ibb.co/L0Z0m7m/5.jpg",
       left: "3200px",
-      width: "400px",
+      width: "300px",
       bottom: "0%"
     },
     {
