@@ -105,34 +105,34 @@ function VishnupriyaRoad() {
 
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "Ghotness",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "She has been kind of a ghot in college. She would go to clear doubts in chamber hours even in third year.",
+      modalTitle: "Janam se Ghot",
       index: 0
 
     },
     {
-      milestoneText: "Second Year",
+      milestoneText: "Love life",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
+      modalText: "A boyfriend since first year, yet currently she is exploring all three together- tinder, bumble, okcupid...so ya too many dates- so many that we can't remember all of them...",
       modalTitle: "Story",
       index: 1
 
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Achievements",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalTitle: "VP being phod phaad",
+      modalText: "Achievements toh being a manu student she got a summer internship in IT Standard Chartered...and got a PPO.",
       index: 2
 
     },
     {
-      milestoneText: "Fourth Year",
+      milestoneText: "Drunk VP",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Loves to drink and party, but cant hold her glass of liqour.",
+      modalTitle: "Piyakoo",
       index: 3
 
     },

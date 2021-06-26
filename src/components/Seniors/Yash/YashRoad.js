@@ -104,34 +104,34 @@ function YashRoad() {
 
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "Sports freak",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Hockey me Gold medal in BOSM 2017(maybe akele khele honge :P), Bronze in bosm 2018.",
+      modalTitle: "Khel kood me number 1",
       index: 0
 
     },
     {
-      milestoneText: "Second Year",
+      milestoneText: "Ghotness",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Ye aadmi ne EG itna phoda ki saakshaat Kamlesh Kumar ko inke paaas aana pada EG sikhne.",
+      modalTitle: "Saannnppp",
       index: 1
 
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Love life",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Gave up his girl friend kyuke usne uski choco.pie khayi bina puche. Cheated on his girlfriend just to get her to show up at his house and reveal everything to his parents.",
+      modalTitle: "Dominance mex",
       index: 2
 
     },
     {
-      milestoneText: "Fourth Year",
+      milestoneText: "LafdaBazi",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "He has a knack of taking up fights with supris. Ends up getting belted by his parents. Also likes to jerk off in his bucket, dont know for what.",
+      modalTitle: "Manliness to dikhani padti he",
       index: 3
 
     },

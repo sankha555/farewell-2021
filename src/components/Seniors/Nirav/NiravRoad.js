@@ -104,34 +104,34 @@ function NiravRoad() {
 
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "Opening Pleasantries",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "I think your write-up was long enough to roast you, and how much of a chutiya you are! ~ Sharvari",
+      modalTitle: "Opening Pleasantries",
       index: 0
 
     },
     {
-      milestoneText: "Second Year",
+      milestoneText: "Awwwww",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Maana ke tu bohot bewakoof, annoying aur chindi hai, but usi ke saath you are really very caring, honest, loving friend",
+      modalTitle: "Awwwww",
       index: 1
 
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Intern",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
       modalText: "Story title",
-      modalTitle: "Story",
+      modalTitle: "Intern",
       index: 2
 
     },
     {
       milestoneText: "Fourth Year",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "I hope your last few days at Campus would be as memorable as your college life!",
+      modalTitle: "Fourth Year",
       index: 3
 
     },

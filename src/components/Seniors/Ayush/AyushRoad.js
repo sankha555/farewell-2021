@@ -104,19 +104,19 @@ function AyushRoad() {
 
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "Formal Intro",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
-      index: 0
-
-    },
-    {
-      milestoneText: "Second Year",
-      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
+      modalText: "init",
       modalTitle: "Story",
       index: 1
+      
+    },
+    {
+      milestoneText: "BOSM 2k18",
+      // imagePath: "https://source.unsplash.com/1600x900/?graduation",
+      modalText: "Puraa BOSM 2k18 ke liye app almost khudse banaya...",
+      modalTitle: "AppD Guru",
+      index: 0
 
     },
     {

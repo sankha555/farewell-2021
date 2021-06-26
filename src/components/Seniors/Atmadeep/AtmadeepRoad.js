@@ -104,28 +104,33 @@ function AtmadeepRoad() {
 
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "Mashin Lurning",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "ML gawd. Andrew Ng of CC perhaps. Pure time model train hota rehta hai room pe.",  
+      
+      modalTitle: "Mashin Lurning",
+      index: 0,
     },
     {
-      milestoneText: "Second Year",
+      milestoneText: "Ad-Astra",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Pixxel ka BITS head. Harvard ya kahin se thesis kar raha tha.",
+      modalTitle: "Ad-Astra",
+      index: 1,
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Fuml Teamworkbaazi",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Philips ka hackathon akele hi jeet liya tha kyonki baki dono ne kuch nahi kiya.koi company bay area bula rahi hai job ke liyere",
+      modalTitle: "Fuml Teamworkbaazi",
+      index: 2,
     },
     {
-      milestoneText: "Fourth Year",
+      milestoneText: "Boring Peoples",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Bore ho rha tha toh yeh sab kar liya.",
+      modalTitle: "Boring Peoples",
+      index: 3,
     },
   ];
 

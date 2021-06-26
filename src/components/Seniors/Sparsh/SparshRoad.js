@@ -104,23 +104,23 @@ function SparshRoad() {
 
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "Namesake",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Log pyaar se kabhi kabhi “Farsh” bhi bula lete h",
+      modalTitle: "Namesake",
       index: 0
 
     },
     {
-      milestoneText: "Second Year",
+      milestoneText: "Chowkidaar",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Bhaiya Stalls pe kuch kaam ho toh batana!",
+      modalTitle: "Chowkidaar",
       index: 1
 
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Simpwars",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
       modalText: "Story title",
       modalTitle: "Story",
@@ -128,10 +128,10 @@ function SparshRoad() {
 
     },
     {
-      milestoneText: "Fourth Year",
+      milestoneText: "Konfidens",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Jo Bhi ho bande me confidence bhot hai or sab ata hai isko! Kahi bhi mujra karwa lo ~ Dosto ki Zubaani",
+      modalTitle: "Konfidens",
       index: 3
 
     },

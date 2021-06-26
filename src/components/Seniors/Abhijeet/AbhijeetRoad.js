@@ -103,31 +103,31 @@ function AbhijeetRoad() {
 
   const milestones = [
     {
-      milestoneText: "First Year",
+      milestoneText: "Verti",
       //imagePath: "./seniorImages/Abhijeet/2.jpeg",
-      modalText: "First story",
-      modalTitle: "Story",
+      modalText: "Came with a dream of verti to CS. 1-2 mein 5 maara fir.",
+      modalTitle: "Na ho paega!",
       index: 0
     },
     {
-      milestoneText: "Second Year",
+      milestoneText: "Pseudo CS",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Second story",
-      modalTitle: "Story",
+      modalText: "Wannabe cs hai ye, overall manu se zyada cs course kiya hai. BTW he has only 2 modes seedha A ya C- !",
+      modalTitle: "Verti nhi to aise hi sahi",
       index: 1
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Biggest fear",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Third story",
-      modalTitle: "Story",
+      modalText: "Biggest fear hai life mein ki koi bandi #metoo na krde iske against isliye bachke rehta sabse",
+      modalTitle: "#metoo",
       index: 2
     },
     {
-      milestoneText: "Fourth Year",
+      milestoneText: "Nasha",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Fourth story",
-      modalTitle: "Story",
+      modalText: "Koi nashe nhi krta but humesha hota hai jaha pe bhi nashe ho rhe hote, drame dekhne ke liye. Fir agle din rant krta",
+      modalTitle: "dusro ke nashe, apne maze",
       index: 3
     },
   ];
