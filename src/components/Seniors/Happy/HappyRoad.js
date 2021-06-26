@@ -104,10 +104,10 @@ function HappyRoad() {
 
     const milestones = [
         {
-            milestoneText: "First Year",
+            milestoneText: "Dil bechara",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Story title",
-            modalTitle: "Story",
+            modalText: "Oasis pe kisi dusre campus ki bandi pe dil aa gya (again)",
+            modalTitle: "Dil bechara",
             index: 0
 
         },
@@ -120,19 +120,11 @@ function HappyRoad() {
 
         },
         {
-            milestoneText: "Third Year",
+            milestoneText: "Coord",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Story title",
-            modalTitle: "Story",
+            modalText: "Apogee coord, glitch repository ko fix karne ka chance virus kha gya ;-;",
+            modalTitle: "Coord",
             index: 2
-
-        },
-        {
-            milestoneText: "Fourth Year",
-            // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Story title",
-            modalTitle: "Story",
-            index: 3
 
         },
     ];
