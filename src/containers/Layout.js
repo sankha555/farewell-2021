@@ -8,6 +8,7 @@ import ParticleBackground from '../components/ParticleBackground/ParticleBackgro
 import './Layout.css';
 import Landing from '../components/LandingPage/Landing'
 import img1 from '../assets/about1.jpg'
+import Code from '../components/LandingPage/assets/Code.jpg'
 
 
 const cacheImages = async (srcArray) => {
@@ -29,6 +30,8 @@ const Layout = ({ tag }) => {
     useEffect(() => {
         const imgs = [
             img1,
+            Code,
+            "https://i.ibb.co/BfbhX2g/Vishnupriya.png",
             "https://i.ibb.co/qnHBzgX/c2.jpg",
             "https://i.ibb.co/27yG4JJ/2.jpg",
             "https://i.ibb.co/sqqJpM8/c3.jpg",
@@ -94,6 +97,21 @@ const Layout = ({ tag }) => {
             "https://i.ibb.co/vHKpkVt/1.jpg",
             "https://i.ibb.co/ZVDV2Rd/2.jpg",
             // "https://i.ibb.co/jrgqwhj/Pics-Art-06-25-07-44-06.png",
+            "https://i.ibb.co/C6pfZb5/3.jpg",
+            "https://i.ibb.co/TMpcXby/4.jpg",
+            "https://i.ibb.co/19SsVyJ/5.jpg",
+            "https://i.ibb.co/gr1ZkTc/1.jpg",
+            "https://i.ibb.co/jzBntMh/2.png",
+            "https://i.ibb.co/nbngZ5x/he.jpg",
+            "https://i.ibb.co/1JhJ7F7/1.jpg",
+            "https://i.ibb.co/pXDptd8/2.jpg",
+            "https://i.ibb.co/2tgJg7K/12345.jpg",
+            "https://i.ibb.co/qMjtcyq/Nirav-Asher.png",
+            "https://i.ibb.co/LQqnXXY/Rahil.png",
+            "https://i.ibb.co/3TpyPX5/123123.jpg",
+            "https://i.ibb.co/sp47SNV/Sparsh-Jain.png",
+            "https://i.ibb.co/wM08hPy/New2-1.png",
+            "https://i.ibb.co/CzbB6DD/New.png",
         ]
         cacheImages(imgs);                                            //comment this out to skip caching
         setTimeout(() => setLoading(false), 2000);
