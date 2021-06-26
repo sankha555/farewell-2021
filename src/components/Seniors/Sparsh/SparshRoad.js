@@ -138,7 +138,7 @@ function SparshRoad() {
   ];
   const imagesInfo = [
     {
-      src: "https://i.ibb.co/NN4rmK6/2.jpg",
+      src: "https://i.ibb.co/3TpyPX5/123123.jpg",
       left: "500px",
       width: "500px",
       bottom: "0%"
@@ -176,7 +176,7 @@ function SparshRoad() {
 
       <div className="roadContainer">
         <div ref={scrollRef} className="road" onWheel={onWheel}>
-          <Doodle id="moving_doodle" move={position} doodleImg="https://i.ibb.co/jrgqwhj/Pics-Art-06-25-07-44-06.png" />
+          <Doodle id="moving_doodle" move={position} doodleImg="https://i.ibb.co/sp47SNV/Sparsh-Jain.png" />
 
 
           {

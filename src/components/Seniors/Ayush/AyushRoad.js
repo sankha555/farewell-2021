@@ -139,33 +139,33 @@ function AyushRoad() {
 
   const imagesInfo = [
     {
-      src: "https://i.ibb.co/cY3tQ7K/1-1.jpg",
+      src: "https://i.ibb.co/C6pfZb5/3.jpg",
       left: "500px",
-      width: "400px",
+      width: "300px",
       bottom: "0%"
     },
     {
-      src: "https://source.unsplash.com/1600x900/?graduation",
+      src: "https://i.ibb.co/TMpcXby/4.jpg",
       left: "1400px",
-      width: "500px",
+      width: "300px",
       bottom: "0%"
     },
     {
-      src: "https://source.unsplash.com/1600x900/?graduation",
+      src: "https://i.ibb.co/19SsVyJ/5.jpg",
       left: "2300px",
-      width: "500px",
+      width: "300px",
       bottom: "0%"
     },
     {
-      src: "https://source.unsplash.com/1600x900/?graduation",
+      src: "https://i.ibb.co/gr1ZkTc/1.jpg",
       left: "3200px",
-      width: "500px",
+      width: "300px",
       bottom: "0%"
     },
     {
-      src: "https://source.unsplash.com/1600x900/?graduation",
+      src: "https://i.ibb.co/jzBntMh/2.png",
       left: "4100px",
-      width: "500px",
+      width: "300px",
       bottom: "0%"
     },
   ]

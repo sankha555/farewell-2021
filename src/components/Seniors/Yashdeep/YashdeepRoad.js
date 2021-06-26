@@ -171,7 +171,7 @@ function YashdeepRoad() {
 
             <div className="roadContainer">
                 <div ref={scrollRef} className="road" onWheel={onWheel}>
-                    <Doodle id="moving_doodle" move={position} doodleImg="https://i.ibb.co/jrgqwhj/Pics-Art-06-25-07-44-06.png" />
+                    <Doodle id="moving_doodle" move={position} doodleImg="https://i.ibb.co/CzbB6DD/New.png" />
 
 
                     {
