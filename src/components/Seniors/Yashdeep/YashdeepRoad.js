@@ -116,7 +116,7 @@ function YashdeepRoad() {
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
             modalText: "Sprinkler me intern intern phodne ke baad ppo to wasoolna hi thha",
             modalTitle: "Obvious cheeze",
-            index: 2
+            index: 1
             
         },
         {
@@ -124,13 +124,13 @@ function YashdeepRoad() {
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
             modalText: "sabki placement aur intern aapke Competitive ke sessions ke vajah se hi lagi hai Guruji",
             modalTitle: "Competitive Guru",
-            index: 1
+            index: 2
 
         },
         {
-            milestoneText: "Gurudakshina",
+            milestoneText: "Le Gurudakshina",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Sabka placement to lagva diya, Ab Gurudkshina me kya luu? Yes chaloo badii dawaat jaha bohot khana he. inka ek junior hai jisne puri planning karli hai inke graduate hone ke baad placement treat lene ki aur sirf corona ki vzah se usmei delay aa rha hai",
+            modalText: "Inka ek junior hai jisne puri planning karli hai inke graduate hone ke baad placement treat lene ki aur sirf corona ki vzah se usmei delay aa rha hai",
             modalTitle: "Fuml Khana",
             index: 3
 
@@ -160,12 +160,6 @@ function YashdeepRoad() {
             src: "https://i.ibb.co/ZVDV2Rd/2.jpg",
             left: "3200px",
             width: "300px",
-            bottom: "0%"
-        },
-        {
-            src: "https://source.unsplash.com/1600x900/?graduation",
-            left: "4100px",
-            width: "500px",
             bottom: "0%"
         },
     ]
