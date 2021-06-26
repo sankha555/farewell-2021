@@ -106,8 +106,8 @@ function AyushRoad() {
     {
       milestoneText: "Formal Intro",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "init",
-      modalTitle: "Story",
+      modalText: "Jab unse pehli baar mila tha toh intro mei roughly kuchh aisa bola tha Coding krta hu aur CG laata hu ~ Aapke juniors",
+      modalTitle: "Formal Intro",
       index: 1
       
     },
@@ -120,18 +120,18 @@ function AyushRoad() {
 
     },
     {
-      milestoneText: "Third Year",
+      milestoneText: "Swag",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Intern tha Cisco mei but company mei feel nhi aaya toh 27 lpa ka PPO thukra diya. Fir Oracle mei 40 lpa.",
+      modalTitle: "I don't need you, you need me",
       index: 2
 
     },
     {
-      milestoneText: "Fourth Year",
+      milestoneText: "Happy Ending",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-      modalText: "Story title",
-      modalTitle: "Story",
+      modalText: "Born in a massage center in Bangkok Ayush Jhaveri is the boy whose story still seeks a happy ending. He is the man who will come after your job and girl and will definitely succeed in stealing the former.",
+      modalTitle: "Happy Ending",
       index: 3
 
     },
