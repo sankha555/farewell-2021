@@ -120,10 +120,10 @@ function AyushRoad() {
 
     },
     {
-      milestoneText: "TCisco",
+      milestoneText: "Fuck Cisco",
       // imagePath: "https://source.unsplash.com/1600x900/?graduation",
       modalText: "Intern tha inka Cisco mei but company mei feel nhi aaya toh 27 lpa ka PPO thukra diya. Reasons to sunno: they're in losses, have mass layoffs and are reducing pay, I had rejected their ppo",
-      modalTitle: "27 LPA pani me",
+      modalTitle: "I don't need you, you need me",
       index: 2
 
     },
