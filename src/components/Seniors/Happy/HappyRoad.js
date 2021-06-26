@@ -112,14 +112,6 @@ function HappyRoad() {
 
         },
         {
-            milestoneText: "Second Year",
-            // imagePath: "https://source.unsplash.com/1600x900/?graduation",
-            modalText: "Story title",
-            modalTitle: "Story",
-            index: 1
-
-        },
-        {
             milestoneText: "Coord",
             // imagePath: "https://source.unsplash.com/1600x900/?graduation",
             modalText: "Apogee coord, glitch repository ko fix karne ka chance virus kha gya ;-;",
