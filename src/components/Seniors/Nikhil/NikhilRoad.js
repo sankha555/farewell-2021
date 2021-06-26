@@ -175,8 +175,7 @@ function NikhilRoad() {
 
       <div className="roadContainer">
         <div ref={scrollRef} className="road" onWheel={onWheel}>
-          <Doodle id="moving_doodle" move={position} doodleImg="https://i.ibb.co/jrgqwhj/Pics-Art-06-25-07-44-06.png" />
-
+          <Doodle id="moving_doodle" width="150px" move={position} doodleImg="https://i.ibb.co/pRSw7jx/Pics-Art-06-25-11-52-52nv.png"  />
 
           {
             imagesInfo.map((imageinfo =>
